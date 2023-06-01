@@ -1,0 +1,20 @@
+/*BOTON FLOTANTE WAPP*/
+
+
+.wsp {
+    padding-right: 1rem;
+    position: fixed;
+    right: 0.1rem;
+    bottom: 3rem;
+
+    .icon-whatsapp {
+        width: 5rem;
+        opacity: 0.7;
+    }
+
+    .icon-whatsapp:hover {
+        width: 6rem;
+        opacity: 1;
+    }
+
+}

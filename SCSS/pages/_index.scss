@@ -1,0 +1,26 @@
+/*Index*/
+.contenedorTextoMain {
+    @include flex-jcenter-acenter;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    color: rgb(255, 255, 255);
+
+    h2 {
+        margin-left: 6.5rem;
+        font-size: 3rem;
+    }
+
+    h1 {
+        color: $Naranja;
+        font-size: 6rem;
+        font-weight: 1000;
+        margin-right: 10rem;
+        width: 100%;
+    }
+
+    p {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+}

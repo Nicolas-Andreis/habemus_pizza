@@ -1,0 +1,8 @@
+.redes img {
+    /*logos de redes, se lee todas las imagenes que esten dentro de la clase redes*/
+    /*contacto*/
+    @include sizes(3rem,3rem);
+    //width: 3rem;
+    //height: 3rem;
+    margin: 1rem 1.5rem;
+}

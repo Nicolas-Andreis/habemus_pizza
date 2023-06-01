@@ -1,0 +1,23 @@
+/*mapa de ubicacion*/
+.ubicacion {
+@include flex-jcenter-acenter;
+    width: 50%;
+    flex-direction: column;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    color: white;
+
+    p {
+        /*se llama de general a particular*/
+        margin-bottom: 1rem;
+        /*separo el texto del mapa*/
+        text-align: center;
+    }
+
+    iframe {
+        width: 95%;
+        border-radius: 0.5rem;
+        height: 15rem;
+    }
+}

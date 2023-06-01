@@ -1,0 +1,29 @@
+.menuContainer {
+    h2 {
+        margin: 1rem 0rem 0.8em 0rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid orange;
+        font-weight: 300;
+        color: white;
+    }
+
+    .menu {
+        /*menu cards*/
+        border-radius: 1rem;
+        background-color: rgb(32, 32, 32);
+        height: 55vh;
+        padding-top: 0.1rem;
+
+        /*espacio entre el contenedor gris del menu y el primer item*/
+        ul {
+            padding: 0;
+
+            li {
+                list-style-type: none;
+                /*saca los puntos de las barras*/
+                margin: 1.5rem 0;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/*NAVBAR MODIFICANDO BOOSTRAP*/
+.logoNav {
+    img {
+        width: 3rem;
+        border-radius: 1.5rem;
+    }
+}
+
+.nav-item {
+    a:hover {
+        color: $Naranja;
+        border-bottom: 3px solid $Naranja;
+    }
+}
+
+.logoNav {
+    span:hover {
+        color: $Naranja;
+        border-bottom: 3px solid $Naranja;
+    }
+}
+
+.active {
+    color: $Naranja;
+}

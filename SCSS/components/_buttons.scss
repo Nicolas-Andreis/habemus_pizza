@@ -1,0 +1,23 @@
+/*BOTON ENVIAR FORMULARIO*/
+.containerEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 4rem;
+    .enviar {
+        margin: auto;
+        background-color: rgb(2, 2, 2);
+        color: $Naranja;
+        border: 0.1rem solid $Naranja;
+        border-radius: 0.5rem;
+        @include sizes(6rem,2rem);
+        //width: 6rem;
+        //height: 2rem;
+        font-size: 1.2rem;
+    }
+    .enviar:hover {
+        background-color: $Naranja;
+        border: solid 3px rgb(255, 255, 255);
+        color: black;
+    }
+}

@@ -1,0 +1,16 @@
+.promosMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.promosFooter{
+    display: flex;
+    justify-content: flex-start;
+}

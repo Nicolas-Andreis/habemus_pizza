@@ -1,0 +1,54 @@
+/*////////////////                          TABLET                   /////////////////////////////////////*/
+/*TABLET*/
+@media (max-width: 992px) {
+    /*es igual o menor que 992px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+
+    /*index*/
+    .contenedorTextoMain {
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        p {
+            font-size: rem;
+        }
+    }
+
+    /*CONTACTO*/
+    .contactoContainer {
+        flex-direction: column;
+
+        .ubicacion {
+            p {
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            iframe {
+                @include sizes(100%,10rem);
+                /*width: 100%;
+                height: 10rem;*/
+            }
+        }
+
+        .formulario {
+            .datosContainer {
+                flex-direction: column;
+            }
+
+            #texTarea {
+                @include sizes(100%,10rem);
+                /*width: 100%;
+                height: 10rem;*/
+            }
+        }
+    }
+}
+
+
+    

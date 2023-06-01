@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { /*1 rem = 10px */
+    font-size: 62,5%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif; /*La use para home (HABEMUS PIZZAS)*/
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;  
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+}
+nav{
+    background-color: #161616 !important;
+}
+header {
+    height: 10%;
+}
+main {
+    height: 75%;
+}
+footer{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*WHATSAPP BOTON FLOTANTE*/
+.icon-whatsapp {
+    width: 5rem;
+    opacity: 0.7;
+}
+.wsp {
+    padding-right: 1rem;
+    position: fixed;
+	right: 0.1rem;
+    bottom: 3rem;
+}
+.icon-whatsapp:hover{
+    width: 6rem;
+    opacity: 1;
+}
+
+/*NAVBAR MODIFICANDO BOOSTRAP*/
+.logoNav img{
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+.nav-item a:hover{
+    color: rgb(255, 140, 0);
+    border-bottom: 3px solid rgb(255, 140, 0);
+}
+.logoNav span:hover{
+    color: rgb(255, 140, 0);
+    border-bottom: 3px solid rgb(255, 140, 0);
+}
+.active{
+    color:  rgb(255, 140, 0);
+}
+
+
+
+/*Index*/
+.contenedorTextoMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.contenedorTextoMain h1{
+    color: rgb(255, 145, 15);
+    font-size: 6rem;
+    font-weight: 1000;
+    margin-right: 10rem;
+    width: 100%;
+}
+.contenedorTextoMain h2{
+    margin-left: 6.5rem;
+    font-size: 3rem;
+}
+.contenedorTextoMain p{
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+/*MENU*/
+
+.menuContainer div h2{
+    margin: 1rem 0rem 0.8em 0rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid orange;
+    font-weight: 300;
+    color: white;
+}
+section .menu { /*menu cards*/
+    border-radius: 1rem;
+    background-color: rgb(32, 32, 32);
+    height: auto;
+    padding-top: 0.1rem; /*espacio entre el contenedor gris del menu y el primer item*/
+}
+
+.menuItems li{
+    list-style-type: none; /*saca los puntos de las barras*/
+    margin: 1.5rem 0;
+    color: white;
+}
+ul{
+    padding: 0;
+}
+
+
+/*PROMOS*/
+
+.promosContanier{/*estructura grid*/
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.promosHeader{
+    grid-area: header;
+}
+.mainPromos{
+    grid-area: main;
+}
+.promosFooter{
+    grid-area: footer;
+}/*estructura grid*/
+
+.promosMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.banner{
+    margin: auto;
+}
+.banner div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imagenPublicitaria img{
+    width: 20%;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: beige;
+}
+.imagenPublicitaria div{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 7rem;
+    background-color:  rgb(255, 145, 15);
+    border-radius: 0.5rem;
+    bottom: 2rem;
+}
+.imagenPublicitaria div p{
+    font-size: 2rem;
+    font-weight: 900;
+    color: black;}
+
+.imagenPublicitaria{
+        margin: 2.5rem 0;
+    }
+
+
+
+/*NOSOTROS*/
+
+.nosotrosContainer{/*estructura grid*/
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: 10% 85% 5%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.nosotrosHeader{
+    grid-area: header;
+}
+.nosotrosMain{
+    grid-area: main;
+    padding: 1rem;
+}
+.nosotrosFooter{
+    grid-area: footer;
+}/*estructura grid*/
+
+.cardContainer{ /*CENTRADO*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/*CONTACTO*/
+
+.contactoContainedor{/*estructura grid*/
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";   
+}
+.contactoHeader{
+    grid-area: header;
+}
+.contactoMain{
+    grid-area: main;
+}
+.contactoFooter{
+    grid-area: footer;
+}/*estructura grid*/
+
+.contactoContainer{
+    display: flex;
+    align-items: center;
+}
+.ubicacion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ubicacion p{ /*se llama de general a particular*/
+    margin-bottom: 1rem;/*separo el texto del mapa*/
+    text-align: center;
+}
+.ubicacion iframe{
+    width: 95%;
+    border-radius: 0.5rem;
+    height: 15rem;
+}
+
+.datosContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+#texTarea{
+    width: 98%;
+    height: 15rem;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    resize: none; /*evita redimensionar*/
+    border-radius: 0.5rem;
+    border: 0px;
+    color: white;
+    margin-top: 3rem;
+
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    align-items: center;
+    width: 100%;
+}
+.campoDatos{
+    width: 90%;
+    height: 1.7rem;
+    margin-top: 0.7rem;
+    padding-left: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0px;
+    background-color:  rgb(0, 0, 0);
+    color: white;
+}
+::placeholder { color: rgba(255, 255, 255, 0.595); } /*pseudoelemto, cambia el color de placeholder*/
+
+.datosContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 3.9rem 0 0 0;
+    color: white;
+}
+.formulario form{
+    width: 100%;
+}
+.containerEnviar{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 4rem;
+}
+.enviar{
+    margin: auto;
+    background-color: rgb(2, 2, 2);
+    color: rgb(255, 140, 0);
+    border: 0.1rem solid rgb(255, 140, 0);
+    border-radius: 0.5rem;
+    width: 6rem;
+    height: 2rem;
+    font-size: 1.2rem;
+} 
+.enviar:hover{
+    background-color: rgb(255, 140, 0);
+    border: solid 3px rgb(255, 255, 255);
+    color: black;
+}
+.redes img { /*logos de redes, se lee todas las imagenes que esten dentro de la clase redes*/ /*contacto*/
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 1.5rem;
+}
+
+
+
+/*////////////////                          TABLET                   /////////////////////////////////////*/
+/*TABLET*/
+@media (max-width: 992px) { /*es igual o menor que 992px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+
+    /*CONTACTO*/
+.contactoContainer{
+    flex-direction: column;
+}
+.datosContainer{
+    flex-direction: column;
+}
+.ubicacion iframe{
+    width: 100%;
+    height: 10rem;
+}
+#texTarea{
+    width: 100%;
+    height: 10rem;
+}
+.ubicacion p {
+    margin-top: 1rem;
+    text-align: center;
+}
+}
+
+
+
+
+
+
+/*////////////////                          MOBILE                   /////////////////////////////////////*/
+
+/*MOBILE*/
+@media (max-width: 768px){ /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+    
+    /*index*/
+    .contenedorTextoMain h1{
+        font-size: 3rem;
+    }
+    .contenedorTextoMain h2{
+        font-size: 1.5rem;
+        margin-top: 3.5rem;
+    }
+    .contenedorTextoMain p{
+        font-size: 1rem;
+    } 
+    .carousel-item img{
+        object-fit: contain;
+    }
+    /*MENU*/
+    section .menu{
+        width: 100%;
+    }
+    /*PROMOS*/
+    .imagenPublicitaria div p{
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+    .banner img{
+        display: none;
+    }
+
+    /*CONTACTO*/
+    .ubicacion iframe{
+        width: 100%;
+        height: 10rem;
+    }
+    #texTarea{
+        width: 100%;
+    }
+}

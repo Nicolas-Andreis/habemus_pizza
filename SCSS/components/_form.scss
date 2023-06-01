@@ -1,0 +1,66 @@
+.datosContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+
+    form {
+        width: 100%;
+
+        .datosContainer {
+            display: flex;
+            flex-direction: row;
+            margin: 3.9rem 0 0 0;
+            color: white;
+
+            .datos {
+                display: flex;
+                flex-direction: column;
+                @include sizes(100%,4rem);
+                //height: 4rem;
+                align-items: center;
+                //width: 100%;
+
+                .campoDatos {
+                    @include sizes(90%,1.7rem);
+                    //width: 90%;
+                    //height: 1.7rem;
+                    margin-top: 0.7rem;
+                    padding-left: 0.5rem;
+                    border-radius: 0.3rem;
+                    border: 0px;
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                }
+            }
+        }
+
+        #texTarea {
+            @include sizes(98%,15rem);
+            //width: 98%;
+            //height: 15rem;
+            padding: 1rem;
+            background-color: rgb(0, 0, 0);
+            resize: none;
+            /*evita redimensionar*/
+            border-radius: 0.5rem;
+            border: 0px;
+            color: white;
+            margin-top: 3rem;
+
+        }
+    }
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.595);
+}
+
+/*pseudoelemto, cambia el color de placeholder*/

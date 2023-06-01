@@ -1,0 +1,70 @@
+/*PROMOS*/
+
+.promosContanier{/*estructura grid*/
+    @include grid;
+    /*height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";*/
+}
+.promosHeader{
+    grid-area: header;
+}
+.mainPromos{
+    grid-area: main;
+}
+.promosFooter{
+    grid-area: footer;
+}/*estructura grid*/
+
+.nosotrosContainer{/*estructura grid*/
+    @include grid
+    /*height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";*/
+}
+.nosotrosHeader{
+    grid-area: header;
+}
+.nosotrosMain{
+    grid-area: main;
+    padding: 1rem;
+}
+.nosotrosFooter{
+    grid-area: footer;
+}/*estructura grid*/
+
+/*CONTACTO*/
+
+.contactoContainedor{/*estructura grid*/
+    @include grid
+    /*height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";  */ 
+}
+.contactoHeader{
+    grid-area: header;
+}
+.contactoMain{
+    grid-area: main;
+}
+.contactoFooter{
+    grid-area: footer;
+}/*estructura grid*/
