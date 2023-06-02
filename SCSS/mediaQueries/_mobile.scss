@@ -39,14 +39,22 @@
 
     /*PROMOS*/
     //carrousel
-    .cardsBox{
-            overflow-x: auto; /* Agrega una barra de desplazamiento horizontal */
+    .promosMain{
+        overflow-x: auto; /* Agrega una barra de desplazamiento horizontal */
             white-space: nowrap; /* Evita el salto de línea */
             -webkit-overflow-scrolling: touch; /* Habilita el desplazamiento suave en dispositivos iOS */
+            .cardsBox{
+                display: inline-block;
+            }
+    }
+    /*.cardsBox{
+            overflow-x: auto; /* Agrega una barra de desplazamiento horizontal
+            white-space: nowrap; /* Evita el salto de línea 
+            -webkit-overflow-scrolling: touch; /* Habilita el desplazamiento suave en dispositivos iOS 
             .box{
                 display: inline-block;
             }
-        }
+        }*/
     .cardsBox {
         .box {
             img {
