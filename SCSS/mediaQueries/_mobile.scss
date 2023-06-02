@@ -40,13 +40,11 @@
     /*PROMOS*/
     //carrousel
     .cardsBox{
-            display: flex;
-            flex-wrap: nowrap;
-            overflow: scroll;
+            overflow-x: auto; /* Agrega una barra de desplazamiento horizontal */
+            white-space: nowrap; /* Evita el salto de línea */
+            -webkit-overflow-scrolling: touch; /* Habilita el desplazamiento suave en dispositivos iOS */
             .box{
-                width: 40%;
-                flex: 1 0 auto;
-                margin: 0 1rem;
+                display: inline-block;
             }
         }
     .cardsBox {
