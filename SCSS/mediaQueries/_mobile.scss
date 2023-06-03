@@ -37,25 +37,17 @@
         }
     }
 
-    /*PROMOS
+    PROMOS
     //carrousel
-    .promosMain{
-     //   overflow: scroll;
-            .cardsBox{
-                width: 600px;
-                box{
-                    float: left;
-                }
-            }
-    }
-    /*.cardsBox{
-            overflow-x: auto; /* Agrega una barra de desplazamiento horizontal
-            white-space: nowrap; /* Evita el salto de línea 
-            -webkit-overflow-scrolling: touch; /* Habilita el desplazamiento suave en dispositivos iOS 
+
+    .cardsBox{
+        overflow-x: scroll; /* Permite el scroll horizontal */
+        white-space: nowrap; /* Evita el salto de línea de los elementos hijos */
             .box{
-                display: inline-block;
+                display: inline-block; /* Permite que los elementos hijos se muestren en una línea horizontal */
+                white-space: normal; /* Restablece el comportamiento de salto de línea para los elementos hijos */
             }
-        }*/
+        }
     .cardsBox {
         .box {
             img {
