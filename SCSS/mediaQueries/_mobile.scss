@@ -1,7 +1,7 @@
 /*////////////////                          MOBILE                   /////////////////////////////////////*/
 
 /*MOBILE*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
 
     /*index*/
@@ -37,10 +37,10 @@
         }
     }
 
-    /*PROMOS*/
+    /*PROMOS
     //carrousel
     .promosMain{
-        overflow: scroll;
+     //   overflow: scroll;
             .cardsBox{
                 width: 600px;
                 box{
