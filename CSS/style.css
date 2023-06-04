@@ -493,17 +493,25 @@ align-items: center;*/
   }
   /*PROMOS*/
   .cardsBox {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
   }
   .cardsBox .box {
-    width: 40%;
+    width: 80%;
+    height: auto;
     flex: 1 0 auto;
-    margin: 0 1rem;
+    display: inline-block;
+    white-space: normal;
+    margin-right: 10px;
+  }
+  .cardsBox .box .box--texto {
+    display: inline-grid;
   }
   .cardsBox .box img {
     width: 4rem;
+    vertical-align: text-top;
+    margin-right: 10%;
   }
   .cards {
     justify-content: center;

@@ -39,19 +39,27 @@
 
     /*PROMOS*/
     .cardsBox{
-        overflow-x: scroll;
+        overflow-x: auto;
         white-space: nowrap;
+        width: 100%;
             .box{
-                width: 40%;
+                width: 80%;
+                height: auto;
                 flex: 1 0 auto;
                 display: inline-block;
                 white-space: normal;
+                margin-right: 10px;
+                .box--texto{
+                    display: inline-grid;
+                }
             }
         }
     .cardsBox {
         .box {
             img {
                 width: 4rem;
+                vertical-align: text-top;
+                margin-right: 10%;
             }
         }
     }
