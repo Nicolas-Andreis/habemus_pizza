@@ -206,28 +206,6 @@ h2 {
 .cardsBox .box div p {
   color: white;
 }
-.cardsBox .box--comentarios {
-  width: 23%;
-  height: 7rem;
-  background-color: rgb(33, 37, 41);
-  border-radius: 0.5rem;
-}
-.cardsBox .box--comentarios div {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-}
-.cardsBox .box--comentarios div img {
-  width: 2rem;
-}
-.cardsBox .box--comentarios div h3 {
-  font-size: 1.2rem;
-  color: rgb(255, 145, 15);
-}
-.cardsBox .box--comentarios p {
-  text-align: center;
-  color: white;
-}
 
 .imagenPublicitaria {
   margin: 1rem 0;
@@ -259,6 +237,16 @@ h2 {
   font-size: 2rem;
   font-weight: 900;
   color: black;
+}
+
+.box-nosotros img {
+  width: 12rem;
+}
+
+.cardsBox-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
 }
 
 header {
@@ -442,6 +430,15 @@ align-items: center;*/
   .contenedorTextoMain p {
     font-size: rem;
   }
+  /*NOSOTROS*/
+  .galeria {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .galeria img {
+    display: inline-block;
+  }
   /*CONTACTO*/
   .contactoContainer {
     flex-direction: column;
@@ -523,6 +520,32 @@ align-items: center;*/
   }
   .banner img {
     display: none;
+  }
+  /*NOSOTROS*/
+  .nosotrosMain {
+    overflow-x: hidden;
+  }
+  .cardsBox-nosotros {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .cardsBox-nosotros .box-nosotros {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    height: auto;
+    display: inline-block;
+    white-space: normal;
+    background-color: rgb(33, 37, 41);
+  }
+  .cardsBox-nosotros .box-nosotros img {
+    width: 10rem;
+    vertical-align: text-top;
+    margin-right: 10%;
+  }
+  .cardContainer {
+    height: auto;
+    margin-bottom: 2rem;
   }
   /*CONTACTO*/
   .ubicacion iframe {

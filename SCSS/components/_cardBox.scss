@@ -38,30 +38,4 @@ h2 {
             }
         }
     }
-
-        .box--comentarios {
-            @include sizes(23%, 7rem);
-            background-color: $grisoscuro;
-            border-radius: 0.5rem;
-
-            div {
-                display: flex;
-                justify-content: space-between;
-                padding: 0.5rem;
-
-                img {
-                    width: 2rem;
-                }
-
-                h3 {
-                    font-size: 1.2rem;
-                    color: $Naranja;
-                }
-            }
-
-            p {
-                text-align: center;
-                color: white;
-            }
-        }
     }
