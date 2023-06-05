@@ -20,14 +20,23 @@
     }
 
     /*NOSOTROS*/
-        .galeria {
-            overflow-x: auto;
-            white-space: nowrap;
-            width: 100%;
-            img {
-                display: inline-block;
-            }
+    .cardsBox-nosotros{
+        flex-wrap: wrap;
+        .box-nosotros{
+            flex-basis: 33.33%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
         }
+    }
+    
+    .slide{
+            display: none;
+    }
+
+    .nosotrosFooter{
+        margin-top: 6rem;
+    }
 
     /*CONTACTO*/
     .contactoContainer {

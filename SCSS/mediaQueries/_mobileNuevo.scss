@@ -38,6 +38,7 @@
     }
 
     /*PROMOS*/
+
     .cardsBox {
         overflow-x: auto;
         white-space: nowrap;
@@ -69,7 +70,7 @@
 
     .cards {
         justify-content: center;
-        flex-basis: 50%;
+        flex-basis: 40%;
     }
 
     .imagenPublicitaria {
@@ -88,32 +89,19 @@
     }
 
     /*NOSOTROS*/
-    .nosotrosMain {
-        overflow-x: hidden;
-      }
-    .cardsBox-nosotros {
-        overflow-x: auto;
-        white-space: nowrap;
-        width: 100%;
-        .box-nosotros {
-            flex: 0 0 auto;
-            margin-right: 10px;
-            //width: 50%;
-            height: auto;
-            display: inline-block;
-            white-space: normal;
-            background-color: $grisoscuro;
-            img {
-                width: 10rem;
-                vertical-align: text-top;
-                margin-right: 10%;
-            }
-        }
+    .cardsBox-nosotros { /*OCULTA GALERIA*/
+        display: none;
+    }
+    .slide{
+        display: block; /*HACE VISIBLE EL CARROUSEL*/
     }
 
     .cardContainer {
         height: auto;
         margin-bottom: 2rem;
+    }
+    .nosotrosFooter{
+        margin-top: 0;
     }
 
     /*CONTACTO*/

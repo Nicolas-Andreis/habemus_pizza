@@ -1,10 +1,20 @@
 .box-nosotros {
     img {
         width: 10rem;
+        //width: 16.67%;
     }
 }
 .cardsBox-nosotros{
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2%;
+    background-color: rgb(33, 37, 41);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.slide{
+    display: none;
 }

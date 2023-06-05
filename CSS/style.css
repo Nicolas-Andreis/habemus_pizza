@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -244,9 +245,18 @@ h2 {
 }
 
 .cardsBox-nosotros {
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2%;
+  background-color: rgb(33, 37, 41);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.slide {
+  display: none;
 }
 
 header {
@@ -415,6 +425,13 @@ align-items: center;*/
   align-items: center;
 }
 
+/*PROMOS*/
+@media (max-width: 1264px) {
+  .cards {
+    flex-basis: 30%; /* El tamaño base del elemento es el 50% del espacio disponible */
+    justify-content: center;
+  }
+}
 /*////////////////                          TABLET                   /////////////////////////////////////*/
 /*TABLET*/
 @media (max-width: 992px) {
@@ -431,13 +448,20 @@ align-items: center;*/
     font-size: rem;
   }
   /*NOSOTROS*/
-  .galeria {
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
+  .cardsBox-nosotros {
+    flex-wrap: wrap;
   }
-  .galeria img {
-    display: inline-block;
+  .cardsBox-nosotros .box-nosotros {
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .slide {
+    display: none;
+  }
+  .nosotrosFooter {
+    margin-top: 6rem;
   }
   /*CONTACTO*/
   .contactoContainer {
@@ -512,7 +536,7 @@ align-items: center;*/
   }
   .cards {
     justify-content: center;
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
   .imagenPublicitaria div p {
     font-size: 1.3rem;
@@ -522,30 +546,18 @@ align-items: center;*/
     display: none;
   }
   /*NOSOTROS*/
-  .nosotrosMain {
-    overflow-x: hidden;
+  .cardsBox-nosotros { /*OCULTA GALERIA*/
+    display: none;
   }
-  .cardsBox-nosotros {
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-  }
-  .cardsBox-nosotros .box-nosotros {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    height: auto;
-    display: inline-block;
-    white-space: normal;
-    background-color: rgb(33, 37, 41);
-  }
-  .cardsBox-nosotros .box-nosotros img {
-    width: 10rem;
-    vertical-align: text-top;
-    margin-right: 10%;
+  .slide {
+    display: block; /*HACE VISIBLE EL CARROUSEL*/
   }
   .cardContainer {
     height: auto;
     margin-bottom: 2rem;
+  }
+  .nosotrosFooter {
+    margin-top: 0;
   }
   /*CONTACTO*/
   .ubicacion iframe {
