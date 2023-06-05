@@ -41,6 +41,7 @@
 
     .cardsBox {
         overflow-x: auto;
+        scrollbar-width: thin; /* Oculta visualmente la barra de desplazamiento */
         white-space: nowrap;
         width: 100%;
 
@@ -50,7 +51,7 @@
             flex: 1 0 auto;
             display: inline-block;
             white-space: normal;
-            margin-right: 10px;
+            margin-left: 10px;
 
             .box--texto {
                 display: inline-grid;
@@ -67,6 +68,12 @@
             }
         }
     }
+
+    
+.cardsBox::-webkit-scrollbar { /* Personalizar la apariencia de la barra de desplazamiento en navegadores basados en WebKit */
+    width: 0.1px; /* le doy una dimension no visible */
+}
+
 
     .cards {
         justify-content: center;
