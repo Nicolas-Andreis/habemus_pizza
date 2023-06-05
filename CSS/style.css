@@ -50,10 +50,12 @@ body {
 .wsp .icon-whatsapp {
   width: 5rem;
   opacity: 0.7;
+  transition: all 1s;
 }
 .wsp .icon-whatsapp:hover {
   width: 6rem;
   opacity: 1;
+  transform: rotateZ(360deg);
 }
 
 /*BOTON ENVIAR FORMULARIO*/
@@ -194,6 +196,12 @@ h2 {
   flex-direction: row;
   justify-content: space-evenly;
 }
+.cardsBox .box {
+  transition: all 1s;
+}
+.cardsBox .box:hover {
+  transform: scale(1.1);
+}
 .cardsBox .box img {
   width: 5rem;
 }
@@ -206,6 +214,13 @@ h2 {
 }
 .cardsBox .box div p {
   color: white;
+}
+
+.cardBs {
+  transition: all 1s;
+}
+.cardBs:hover {
+  transform: scale(1.1);
 }
 
 .imagenPublicitaria {
@@ -242,6 +257,10 @@ h2 {
 
 .box-nosotros img {
   width: 10rem;
+  transition: all 1s; /* puede ser 'all' también */
+}
+.box-nosotros img:hover {
+  transform: scale(1.5, 1.5);
 }
 
 .cardsBox-nosotros {
@@ -447,6 +466,10 @@ align-items: center;*/
   .contenedorTextoMain p {
     font-size: rem;
   }
+  /*PROMOS*/
+  .cardsBox .box:hover { /*utilizacion*/
+    transform: none; /* Elimina la transformación en la media query */
+  }
   /*NOSOTROS*/
   .cardsBox-nosotros {
     flex-wrap: wrap;
@@ -534,6 +557,9 @@ align-items: center;*/
     width: 4rem;
     vertical-align: text-top;
     margin-right: 10%;
+  }
+  .cardsBox .box:hover { /*utilizacion*/
+    transform: none; /* Elimina la transformación en la media query */
   }
   .cardsBox::-webkit-scrollbar { /* Personalizar la apariencia de la barra de desplazamiento en navegadores basados en WebKit */
     width: 0.1px; /* le doy una dimension no visible */

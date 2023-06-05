@@ -10,11 +10,13 @@
     .icon-whatsapp {
         width: 5rem;
         opacity: 0.7;
+        transition: all 1s;
     }
 
     .icon-whatsapp:hover {
         width: 6rem;
         opacity: 1;
+        transform: rotateZ(360deg)
     }
 
 }

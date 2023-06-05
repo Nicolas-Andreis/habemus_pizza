@@ -20,6 +20,12 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        &{
+            transition: all 1s;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
 
         img {
             width: 5rem;

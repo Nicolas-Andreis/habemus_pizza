@@ -66,6 +66,9 @@
                 vertical-align: text-top;
                 margin-right: 10%;
             }
+            &:hover{ /*utilizacion*/
+                transform: none; /* Elimina la transformación en la media query */
+            }
         }
     }
 

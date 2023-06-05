@@ -19,6 +19,13 @@
         }
     }
 
+    /*PROMOS*/
+    .cardsBox{
+        .box:hover{ /*utilizacion*/
+            transform: none; /* Elimina la transformación en la media query */
+        }
+    }
+    
     /*NOSOTROS*/
     .cardsBox-nosotros{
         flex-wrap: wrap;

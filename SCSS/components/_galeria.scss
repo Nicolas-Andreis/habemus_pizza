@@ -1,9 +1,14 @@
 .box-nosotros {
     img {
         width: 10rem;
-        //width: 16.67%;
+        transition: all 1s; /* puede ser 'all' también */
+        &:hover {
+            transform: scale(1.5,1.5);
+        }
     }
 }
+
+
 .cardsBox-nosotros{
     width: 90%;
     margin: auto;
