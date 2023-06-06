@@ -1,0 +1,8 @@
+.redesLink{
+    transition: all 1.2s;
+    &:hover {
+        transform: rotateY(360deg);
+    }
+}    
+
+

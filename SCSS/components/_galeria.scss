@@ -1,6 +1,7 @@
 .box-nosotros {
     img {
         width: 10rem;
+        border-radius: $bordesRedondeados;
         transition: all 1s; /* puede ser 'all' también */
         &:hover {
             transform: scale(1.5,1.5);
@@ -15,8 +16,6 @@
     margin-top: 2%;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(33, 37, 41);
-    border-radius: 0.5rem;
     padding: 0.5rem;
 }
 

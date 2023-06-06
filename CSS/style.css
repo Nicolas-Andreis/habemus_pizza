@@ -79,11 +79,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: top;
-  height: 4rem;
+  margin-top: 1rem;
 }
-.containerEnviar .enviar {
+.containerEnviar .boton {
   margin: auto;
-  background-color: rgb(2, 2, 2);
+  background-color: rgba(2, 2, 2, 0);
   color: rgb(255, 145, 15);
   border: 0.1rem solid rgb(255, 145, 15);
   border-radius: 0.5rem;
@@ -91,9 +91,11 @@ body {
   height: 2rem;
   font-size: 1.2rem;
 }
-.containerEnviar .enviar:hover {
+.containerEnviar .boton {
+  transition: all 0.5s;
+}
+.containerEnviar .boton:hover {
   background-color: rgb(255, 145, 15);
-  border: solid 3px rgb(255, 255, 255);
   color: black;
 }
 
@@ -273,6 +275,7 @@ h2 {
 
 .box-nosotros img {
   width: 10rem;
+  border-radius: 0.5rem;
   transition: all 1s; /* puede ser 'all' también */
 }
 .box-nosotros img:hover {
@@ -285,13 +288,18 @@ h2 {
   margin-top: 2%;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(33, 37, 41);
-  border-radius: 0.5rem;
   padding: 0.5rem;
 }
 
 .carrousel-nosotros {
   display: none;
+}
+
+.redesLink {
+  transition: all 1.2s;
+}
+.redesLink:hover {
+  transform: rotateY(360deg);
 }
 
 header {
@@ -308,6 +316,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+footer .copyright {
+  text-align: center;
 }
 
 nav {
@@ -644,7 +655,6 @@ align-items: center;*/
   .banner div #textoBanners {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: auto;
   }
   /*NOSOTROS*/
   .cardsBox-nosotros {

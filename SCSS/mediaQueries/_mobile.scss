@@ -119,7 +119,6 @@
             #textoBanners {
                 font-size: map-get($textoBanners, mobile);
                 font-weight: map-get($textoBanners, mobile-weight);
-                margin: auto;
             }
         }
     }
