@@ -21,10 +21,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&display=swap"
         rel="stylesheet">
+
+    <!--ANIMATE CSS CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--CSS-->
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body>
+<body class="overflow-hidden"> <!--CREA LA CLASE PARA OCULTAR LA BARRA SCROL POR ANIMAR MIS ELEMENTOS-->
     <div class="container-fluid indexContainer">
         <header class=" row indexHeader">
             <!--NAVBAR BOOSTRAP-->
@@ -61,7 +64,7 @@
         <main class="container-fluid indexMain row mx-auto">
                 <section class="col-8 col-md-6 mx-auto my-auto  carousel contenedorCarousel"> <!--CARROUSEL BOOSTRAP--> 
                     <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner p-2">
+                        <div class="carousel-inner p-2 animate__animated animate__rotateIn">
                             <div class="carousel-item active">
                                 <img src="./IMAGENES/horno barro/pizza.png" class="d-block w-100" alt="...">
                             </div>
@@ -88,10 +91,10 @@
                 </section>
                 <section class="col-md-6 text-center contenedorTextoMain">
                     <div>
-                        <H2>Verdadera</H2>
-                        <H1>Pizza a&emsp;<br>&emsp;
+                        <H2 class="animate__animated animate__bounceInRight">Verdadera</H2>
+                        <H1 class="animate__animated animate__bounceInDown">Pizza a&emsp;<br>&emsp;
                             la piedra</H1>
-                        <P>Abierto todos los dias <br>
+                        <P class="animate__animated animate__bounceInRight">Abierto todos los dias <br>
                             mediodia y noche
                         </P>
                     </div>

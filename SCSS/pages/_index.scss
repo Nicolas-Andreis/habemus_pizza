@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;*/
     color: rgb(255, 255, 255);
-
     h2 {
         margin-left: 6.5rem;
         font-size: 3rem;
@@ -23,4 +22,7 @@
         font-size: 2rem;
         margin-top: 3rem;
     }
+}
+.overflow-hidden{  /*OCULTAR LA BARRA DE OVERFLOW CUANDO SE ANIMA EL INDEX*/
+    overflow: hidden;
 }

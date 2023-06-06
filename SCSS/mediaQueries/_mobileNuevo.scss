@@ -3,6 +3,10 @@
 /*MOBILE*/
 @media (max-width: 768px) {
     /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+    .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
+        transform: none;
+    }
+
 
     /*index*/
     .contenedorTextoMain {

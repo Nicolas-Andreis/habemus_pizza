@@ -395,6 +395,10 @@ align-items: center;*/
   margin-top: 3rem;
 }
 
+.overflow-hidden { /*OCULTAR LA BARRA DE OVERFLOW CUANDO SE ANIMA EL INDEX*/
+  overflow: hidden;
+}
+
 .menuContainer h2 {
   margin: 1rem 0rem 0.8em 0rem;
   padding-bottom: 0.5rem;
@@ -446,6 +450,9 @@ align-items: center;*/
 
 /*PROMOS*/
 @media (max-width: 1264px) {
+  .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
+    transform: none;
+  }
   .cards {
     flex-basis: 30%; /* El tamaño base del elemento es el 50% del espacio disponible */
     justify-content: center;
@@ -455,6 +462,9 @@ align-items: center;*/
 /*TABLET*/
 @media (max-width: 992px) {
   /*es igual o menor que 992px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+  .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
+    transform: none;
+  }
   /*index*/
   .contenedorTextoMain h1 {
     font-size: 4rem;
@@ -514,6 +524,9 @@ align-items: center;*/
 /*MOBILE*/
 @media (max-width: 768px) {
   /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+  .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
+    transform: none;
+  }
   /*index*/
   .contenedorTextoMain h1 {
     font-size: 3rem;
