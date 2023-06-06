@@ -26,13 +26,12 @@
             flex-direction: column;
             align-items: center;
             width: 95%;
-
-            .textoBanners {
-                font-size: map-get($textoBanners, desktop);
-                font-weight: map-get($textoBanners, desktop-weight);
-                margin: 0;
-                color: black;
-            }
+        }
+        .textoBanners {
+            font-size: map-get($textoBanners, desktop);
+            font-weight: map-get($textoBanners, desktop-weight);
+            margin: 0;
+            color: black;
         }
     }
 }
