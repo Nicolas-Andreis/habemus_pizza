@@ -21,9 +21,10 @@
     .texto {
         font-size: map-get($texo, mobile);
     }
-    .textoBanners{
-        font-size: map-get($textoBanners, mobile);
-    }
+    
+    
+
+
     /*index*/
     .contenedorTextoMain {
         h1 {
@@ -108,46 +109,50 @@
         flex-basis: 40%;
     }
 
-.textoBanners {
-    font-size: map-get($textoBanners, mobile); 
-    font-weight: map-get($textoBanners, mobile-weight)
-}
 
-.banner {
-    img {
+
+    .banner {
+        img {
+            display: none;
+        }
+        div {
+            #textoBanners {
+                font-size: map-get($textoBanners, mobile);
+                font-weight: map-get($textoBanners, mobile-weight);
+                margin: auto;
+            }
+        }
+    }
+
+    /*NOSOTROS*/
+    .cardsBox-nosotros {
+        /*OCULTA GALERIA*/
         display: none;
     }
-}
 
-/*NOSOTROS*/
-.cardsBox-nosotros {
-    /*OCULTA GALERIA*/
-    display: none;
-}
-
-.slide {
-    display: block;
-    /*HACE VISIBLE EL CARROUSEL*/
-}
-
-.cardContainer {
-    height: auto;
-    margin-bottom: 2rem;
-}
-
-.nosotrosFooter {
-    margin-top: 0;
-}
-
-/*CONTACTO*/
-.ubicacion {
-    iframe {
-        width: 100%;
-        height: 10rem;
+    .slide {
+        display: block;
+        /*HACE VISIBLE EL CARROUSEL*/
     }
-}
 
-#texTarea {
-    width: 100%;
-}
+    .cardContainer {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .nosotrosFooter {
+        margin-top: 0;
+    }
+
+    /*CONTACTO*/
+    .ubicacion {
+        iframe {
+            width: 100%;
+            height: 10rem;
+        }
+    }
+
+    #texTarea {
+        width: 100%;
+    }
 }

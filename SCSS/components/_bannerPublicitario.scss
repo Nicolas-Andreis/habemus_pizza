@@ -21,17 +21,18 @@
         }
 
         div {
-            //salto de linea
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 95%;
+            .textoBanners {
+                font-size: map-get($textoBanners, desktop);
+                font-weight: map-get($textoBanners, desktop-weight);
+                text-align: center;
+                margin: auto;
+                color: black;
+            }
         }
-        .textoBanners {
-            font-size: map-get($textoBanners, desktop);
-            font-weight: map-get($textoBanners, desktop-weight);
-            margin: 0;
-            color: black;
-        }
+        
     }
 }

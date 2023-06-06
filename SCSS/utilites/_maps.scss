@@ -19,13 +19,14 @@ $texo: (
 
 $textoBanners: (
     desktop: 2rem,
-    desktop-weight: 900,
+    desktop-weight: 1000,
     tablet: 1.8rem,
-    tablet-weight: 700,
+    tablet-weight: 800,
     mobile: 1.5rem,
-    mobile-weight: 500
+    mobile-weight: 700
 );
 
 /*div {
     font-size: map-get($titulos, desktop);
+    font-size: map-get($textoBanners, mobile);
 }*/

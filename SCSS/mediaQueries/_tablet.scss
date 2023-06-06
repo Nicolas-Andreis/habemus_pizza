@@ -3,24 +3,31 @@
 @media (max-width: 992px) {
     /*es igual o menor que 992px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
 
-    .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
+    .icon-whatsapp:hover {
+        /*DESACTIVAR ROTACION WAPP*/
         transform: none;
     }
 
     /*MAP GET*/
-    .titulos{
+    .titulos {
         font-size: map-get($titulos, tablet);
     }
-    
-    .subtitulos{
+
+    .subtitulos {
         font-size: map-get($subtitulos, tablet);
     }
-    .texto{
+
+    .texto {
         font-size: map-get($texo, tablet);
     }
-    .textoBanners{
+
+
+    #textoBanners {
         font-size: map-get($textoBanners, tablet);
+        font-weight: map-get($textoBanners, tablet-weight);
     }
+
+
     /*index*/
     .contenedorTextoMain {
         h1 {
@@ -38,33 +45,33 @@
     }
 
     /*PROMOS*/
-    .textoBanners {
-        font-size: map-get($textoBanners, tablet); 
-        font-weight: map-get($textoBanners, tablet-weight);
-    }
 
-    .cardsBox{
-        .box:hover{ /*utilizacion*/
-            transform: none; /* Elimina la transformación en la media query */
+
+    .cardsBox {
+        .box:hover {
+            /*utilizacion*/
+            transform: none;
+            /* Elimina la transformación en la media query */
         }
     }
-    
+
     /*NOSOTROS*/
-    .cardsBox-nosotros{
+    .cardsBox-nosotros {
         flex-wrap: wrap;
-        .box-nosotros{
+
+        .box-nosotros {
             flex-basis: 33.33%;
             display: flex;
             justify-content: center;
             margin-bottom: 1rem;
         }
     }
-    
-    .carrousel-nosotros{
-            display: none;
+
+    .carrousel-nosotros {
+        display: none;
     }
 
-    .nosotrosFooter{
+    .nosotrosFooter {
         margin-top: 6rem;
     }
 
@@ -98,4 +105,3 @@
         }
     }
 }
-

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*div {
     font-size: map-get($titulos, desktop);
+    font-size: map-get($textoBanners, mobile);
 }*/
 * {
   margin: 0;
@@ -262,10 +263,11 @@ h2 {
   align-items: center;
   width: 95%;
 }
-.imagenPublicitaria .banner .textoBanners {
+.imagenPublicitaria .banner div .textoBanners {
   font-size: 2rem;
-  font-weight: 900;
-  margin: 0;
+  font-weight: 1000;
+  text-align: center;
+  margin: auto;
   color: black;
 }
 
@@ -484,7 +486,8 @@ align-items: center;*/
 /*TABLET*/
 @media (max-width: 992px) {
   /*es igual o menor que 992px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
-  .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
+  .icon-whatsapp:hover {
+    /*DESACTIVAR ROTACION WAPP*/
     transform: none;
   }
   /*MAP GET*/
@@ -497,8 +500,9 @@ align-items: center;*/
   .texto {
     font-size: 1rem;
   }
-  .textoBanners {
+  #textoBanners {
     font-size: 1.8rem;
+    font-weight: 800;
   }
   /*index*/
   .contenedorTextoMain h1 {
@@ -512,12 +516,10 @@ align-items: center;*/
     font-size: rem;
   }
   /*PROMOS*/
-  .textoBanners {
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-  .cardsBox .box:hover { /*utilizacion*/
-    transform: none; /* Elimina la transformación en la media query */
+  .cardsBox .box:hover {
+    /*utilizacion*/
+    transform: none;
+    /* Elimina la transformación en la media query */
   }
   /*NOSOTROS*/
   .cardsBox-nosotros {
@@ -576,9 +578,6 @@ align-items: center;*/
   }
   .texto {
     font-size: 0.9rem;
-  }
-  .textoBanners {
-    font-size: 1.5rem;
   }
   /*index*/
   .contenedorTextoMain h1 {
@@ -639,12 +638,13 @@ align-items: center;*/
     justify-content: center;
     flex-basis: 40%;
   }
-  .textoBanners {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
   .banner img {
     display: none;
+  }
+  .banner div #textoBanners {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: auto;
   }
   /*NOSOTROS*/
   .cardsBox-nosotros {
