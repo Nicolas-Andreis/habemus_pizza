@@ -11,3 +11,15 @@ body{
     background: $bgGradient;
     background-blend-mode: multiply;
 }
+
+.titulos{
+    font-size: map-get($titulos, desktop);
+}
+
+.subtitulos{
+    font-size: map-get($subtitulos, desktop);
+}
+
+.texto{
+    font-size: map-get($texo, desktop);
+}

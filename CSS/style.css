@@ -20,6 +20,18 @@ body {
   background-blend-mode: multiply;
 }
 
+.titulos {
+  font-size: 1.4rem;
+}
+
+.subtitulos {
+  font-size: 1.2rem;
+}
+
+.texto {
+  font-size: 1rem;
+}
+
 /*NAVBAR MODIFICANDO BOOSTRAP*/
 .logoNav img {
   width: 3rem;
@@ -209,7 +221,6 @@ h2 {
   text-align: center;
 }
 .cardsBox .box div h3 {
-  font-size: 1.2rem;
   color: rgb(255, 145, 15);
 }
 .cardsBox .box div p {
@@ -248,10 +259,10 @@ h2 {
   align-items: center;
   width: 95%;
 }
-.imagenPublicitaria .banner div p {
-  margin: 0;
+.imagenPublicitaria .banner div .textoBanners {
   font-size: 2rem;
   font-weight: 900;
+  margin: 0;
   color: black;
 }
 
@@ -276,6 +287,11 @@ h2 {
 
 .carrousel-nosotros {
   display: none;
+}
+
+.slide {
+  display: none;
+  /*HACE VISIBLE EL CARROUSEL*/
 }
 
 header {
@@ -448,14 +464,22 @@ align-items: center;*/
   align-items: center;
 }
 
-/*PROMOS*/
 @media (max-width: 1264px) {
+  /*PROMOS*/
   .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
     transform: none;
   }
   .cards {
     flex-basis: 30%; /* El tamaño base del elemento es el 50% del espacio disponible */
     justify-content: center;
+  }
+  .cardsBox .box {
+    width: 24%;
+    height: auto;
+  }
+  .cardsBox .box img {
+    width: 4rem;
+    height: 4rem;
   }
 }
 /*////////////////                          TABLET                   /////////////////////////////////////*/
@@ -464,6 +488,19 @@ align-items: center;*/
   /*es igual o menor que 992px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
   .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
     transform: none;
+  }
+  /*MAP GET*/
+  .titulos {
+    font-size: 1.3rem;
+  }
+  .subtitulos {
+    font-size: 1.2rem;
+  }
+  .texto {
+    font-size: 1rem;
+  }
+  .textoBanners {
+    font-size: 1.8rem;
   }
   /*index*/
   .contenedorTextoMain h1 {
@@ -477,6 +514,10 @@ align-items: center;*/
     font-size: rem;
   }
   /*PROMOS*/
+  .textoBanners {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
   .cardsBox .box:hover { /*utilizacion*/
     transform: none; /* Elimina la transformación en la media query */
   }
@@ -524,8 +565,22 @@ align-items: center;*/
 /*MOBILE*/
 @media (max-width: 768px) {
   /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
-  .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
+  .icon-whatsapp:hover {
+    /*DESACTIVAR ROTACION WAPP*/
     transform: none;
+  }
+  /*MAP GET*/
+  .titulos {
+    font-size: 1.2rem;
+  }
+  .subtitulos {
+    font-size: 1.1rem;
+  }
+  .texto {
+    font-size: 0.9rem;
+  }
+  .textoBanners {
+    font-size: 1.5rem;
   }
   /*index*/
   .contenedorTextoMain h1 {
@@ -551,7 +606,8 @@ align-items: center;*/
   /*PROMOS*/
   .cardsBox {
     overflow-x: auto;
-    scrollbar-width: thin; /* Oculta visualmente la barra de desplazamiento */
+    scrollbar-width: thin;
+    /* Oculta visualmente la barra de desplazamiento */
     white-space: nowrap;
     width: 100%;
   }
@@ -571,29 +627,35 @@ align-items: center;*/
     vertical-align: text-top;
     margin-right: 10%;
   }
-  .cardsBox .box:hover { /*utilizacion*/
-    transform: none; /* Elimina la transformación en la media query */
+  .cardsBox .box:hover {
+    /*utilizacion*/
+    transform: none;
+    /* Elimina la transformación en la media query */
   }
-  .cardsBox::-webkit-scrollbar { /* Personalizar la apariencia de la barra de desplazamiento en navegadores basados en WebKit */
-    width: 0.1px; /* le doy una dimension no visible */
+  .cardsBox::-webkit-scrollbar {
+    /* Personalizar la apariencia de la barra de desplazamiento en navegadores basados en WebKit */
+    width: 0.1px;
+    /* le doy una dimension no visible */
   }
   .cards {
     justify-content: center;
     flex-basis: 40%;
   }
-  .imagenPublicitaria div p {
-    font-size: 1.3rem;
-    font-weight: 900;
+  .textoBanners {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
   .banner img {
     display: none;
   }
   /*NOSOTROS*/
-  .cardsBox-nosotros { /*OCULTA GALERIA*/
+  .cardsBox-nosotros {
+    /*OCULTA GALERIA*/
     display: none;
   }
   .slide {
-    display: block; /*HACE VISIBLE EL CARROUSEL*/
+    display: block;
+    /*HACE VISIBLE EL CARROUSEL*/
   }
   .cardContainer {
     height: auto;

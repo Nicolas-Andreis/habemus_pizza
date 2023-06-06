@@ -1,0 +1,31 @@
+//MAP GET
+$titulos: (
+    desktop: 1.4rem,
+    tablet: 1.3rem,
+    mobile: 1.2rem
+);
+
+$subtitulos: (
+    desktop: 1.2rem,
+    tablet: 1.2rem,
+    mobile: 1.1rem
+);
+
+$texo: (
+    desktop: 1rem,
+    tablet: 1rem,
+    mobile: 0.9rem
+);
+
+$textoBanners: (
+    desktop: 2rem,
+    desktop-weight: 900,
+    tablet: 1.8rem,
+    tablet-weight: 700,
+    mobile: 1.5rem,
+    mobile-weight: 500
+)
+
+/*div {
+    font-size: map-get($titulos, desktop);
+}*/

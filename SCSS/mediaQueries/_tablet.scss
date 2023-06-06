@@ -6,7 +6,21 @@
     .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
         transform: none;
     }
+
+    /*MAP GET*/
+    .titulos{
+        font-size: map-get($titulos, tablet);
+    }
     
+    .subtitulos{
+        font-size: map-get($subtitulos, tablet);
+    }
+    .texto{
+        font-size: map-get($texo, tablet);
+    }
+    .textoBanners{
+        font-size: map-get($textoBanners, tablet);
+    }
     /*index*/
     .contenedorTextoMain {
         h1 {
@@ -24,6 +38,11 @@
     }
 
     /*PROMOS*/
+    .textoBanners {
+        font-size: map-get($textoBanners, tablet); 
+        font-weight: map-get($textoBanners, tablet-weight);
+    }
+
     .cardsBox{
         .box:hover{ /*utilizacion*/
             transform: none; /* Elimina la transformación en la media query */
@@ -79,3 +98,4 @@
         }
     }
 }
+

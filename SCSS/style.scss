@@ -1,6 +1,7 @@
 //VARIABLES
 @import "../SCSS/utilites/variables";
 @import "../SCSS/utilites/mixins";
+@import "../SCSS/utilites/maps";
 // RESET
 @import "../SCSS/base/reset";
 @import "../SCSS/base/typo";
@@ -31,5 +32,5 @@
 // media queries
 @import "../SCSS/mediaQueries/tabletxl";
 @import "../SCSS/mediaQueries/tablet"; 
-@import "../SCSS/mediaQueries/mobileNuevo"; 
+@import "../SCSS/mediaQueries/mobile"; 
 
