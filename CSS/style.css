@@ -151,7 +151,7 @@ body {
 }
 .formulario form #texTarea {
   width: 98%;
-  height: 15rem;
+  height: 15.2rem;
   padding: 1rem;
   background-color: rgb(0, 0, 0);
   resize: none;
@@ -212,7 +212,6 @@ h2 {
 .cardsBox .box {
   width: 22%;
   height: 5.5rem;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45), 0 2px 10px 0 rgba(0, 0, 0, 0.44);
   background-color: rgb(33, 37, 41);
   border-radius: 0.5rem;
   display: flex;
@@ -300,10 +299,14 @@ h2 {
   display: none;
 }
 
-.redesLink {
+.redes {
+  border-top: 1px solid rgb(255, 145, 15);
+  margin-top: 2rem;
+}
+.redes .redesLink {
   transition: all 1.2s;
 }
-.redesLink:hover {
+.redes .redesLink:hover {
   transform: rotateY(360deg);
 }
 
@@ -678,9 +681,15 @@ align-items: center;*/
     margin-top: 0;
   }
   /*CONTACTO*/
+  .ubicacion {
+    width: 75%;
+  }
   .ubicacion iframe {
     width: 100%;
     height: 10rem;
+  }
+  .formulario {
+    width: 75%;
   }
   #texTarea {
     width: 100%;

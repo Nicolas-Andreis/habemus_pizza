@@ -14,7 +14,6 @@ h2 {
     .box {
         @include sizes(22%, 5.5rem);
         //background-color: rgb(33, 37, 41);
-        box-shadow: map-get($sombra, densa);
     background-color: $grisoscuro;
     //border: solid 2px $Naranja;
     border-radius: 0.5rem;
