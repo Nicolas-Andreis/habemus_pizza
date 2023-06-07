@@ -199,7 +199,7 @@ body {
 h2 {
   font-size: 1.2rem;
   color: white;
-  margin: 0.4rem 0rem 0.4rem 2rem;
+  margin: 0.4rem 0rem 0.4rem 1rem;
 }
 
 .cardsBox {
@@ -598,6 +598,9 @@ align-items: center;*/
   .texto {
     font-size: 0.9rem;
   }
+  .sombra {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
   /*index*/
   .contenedorTextoMain h1 {
     font-size: 3rem;
@@ -690,6 +693,9 @@ align-items: center;*/
   }
   .formulario {
     width: 75%;
+  }
+  .formulario form .datosContainer {
+    margin-top: 1rem;
   }
   #texTarea {
     width: 100%;

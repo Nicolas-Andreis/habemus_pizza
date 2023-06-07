@@ -21,6 +21,10 @@
     .texto {
         font-size: map-get($texo, mobile);
     }
+    .sombra{
+        box-shadow: map-get($sombra, normal);
+    }
+    
     
     
 
@@ -153,6 +157,11 @@
     }
     .formulario{
         width: 75%;
+        form{
+            .datosContainer{
+                margin-top: 1rem;
+            }
+        }
     }
     #texTarea {
         width: 100%;
