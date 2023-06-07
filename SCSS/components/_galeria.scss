@@ -1,15 +1,3 @@
-.box-nosotros {
-    img {
-        width: 10rem;
-        border-radius: $bordesRedondeados;
-        transition: all 1s; /* puede ser 'all' también */
-        &:hover {
-            transform: scale(1.5,1.5);
-        }
-    }
-}
-
-
 .cardsBox-nosotros{
     width: 90%;
     margin: auto;
@@ -17,6 +5,16 @@
     display: flex;
     justify-content: space-evenly;
     padding: 0.5rem;
+    .box-nosotros {
+        img {
+            width: 10rem;
+            border-radius: $bordesRedondeados;
+            transition: all 1s; /* puede ser 'all' también */
+            &:hover {
+                transform: scale(1.5,1.5);
+            }
+        }
+    }
 }
 
 .carrousel-nosotros{

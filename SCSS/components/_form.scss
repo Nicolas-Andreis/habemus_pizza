@@ -1,9 +1,3 @@
-.datosContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .formulario {
     display: flex;
     flex-direction: row;
@@ -15,7 +9,9 @@
         width: 100%;
 
         .datosContainer {
+            width: 100%;
             display: flex;
+            justify-content: center;
             flex-direction: row;
             margin: 3.9rem 0 0 0;
             color: white;

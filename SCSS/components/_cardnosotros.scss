@@ -1,7 +1,4 @@
 .cardContainer{ /*CENTRADO*/
-    @include flex-jcenter-acenter;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
-    height: 100%;
+    @include flex-jcenter-acenter; 
+    margin-bottom: 2rem;
 }
