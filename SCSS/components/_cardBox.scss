@@ -14,33 +14,36 @@ h2 {
     .box {
         @include sizes(22%, 5.5rem);
         //background-color: rgb(33, 37, 41);
-        background-color: $grisoscuro;
-        //border: solid 2px $Naranja;
-        border-radius: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        &{
-            transition: all 1s;
+        box-shadow: map-get($sombra, densa);
+    background-color: $grisoscuro;
+    //border: solid 2px $Naranja;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    & {
+        transition: all 1s;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    img {
+        width: 5rem;
+    }
+
+    div {
+        text-align: center;
+
+        h3 {
+            color: $Naranja;
         }
-        &:hover{
-            transform: scale(1.1);
-        }
 
-        img {
-            width: 5rem;
-        }
-
-        div {
-            text-align: center;
-
-            h3 {
-                color: $Naranja;
-            }
-
-            p {
-                color: white;
-            }
+        p {
+            color: white;
         }
     }
-    }
+}
+}

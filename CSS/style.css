@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*div {
     font-size: map-get($titulos, desktop);
-    font-size: map-get($textoBanners, mobile);
+    box-shadow: map-get($sombra, densa);
 }*/
 * {
   margin: 0;
@@ -34,6 +34,10 @@ body {
 
 .texto {
   font-size: 1rem;
+}
+
+.sombra {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45), 0 2px 10px 0 rgba(0, 0, 0, 0.44);
 }
 
 /*NAVBAR MODIFICANDO BOOSTRAP*/
@@ -208,6 +212,7 @@ h2 {
 .cardsBox .box {
   width: 22%;
   height: 5.5rem;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.45), 0 2px 10px 0 rgba(0, 0, 0, 0.44);
   background-color: rgb(33, 37, 41);
   border-radius: 0.5rem;
   display: flex;
