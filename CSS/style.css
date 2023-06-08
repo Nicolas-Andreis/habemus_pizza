@@ -335,15 +335,6 @@ nav {
   grid-template-columns: auto;
   grid-row: 10% 80% 10%;
   grid-template-areas: "header" "main" "footer";
-  /*height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-row: 10% 80% 10%;
-  grid-template-areas: 
-  "header"
-  "main"
-  "footer";*/
 }
 
 .promosHeader {

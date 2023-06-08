@@ -2,9 +2,6 @@ footer{
     color: rgb(255, 255, 255);
     @include flex-jcenter-acenter;
     flex-direction: column;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     .copyright{
         text-align: center;
     }

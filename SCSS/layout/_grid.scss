@@ -2,15 +2,6 @@
 
 .promosContanier{/*estructura grid*/
     @include grid;
-    /*height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-row: 10% 80% 10%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";*/
 }
 .promosHeader{
     grid-area: header;
@@ -24,15 +15,7 @@
 
 .nosotrosContainer{/*estructura grid*/
     @include grid
-    /*height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-row: 10% 80% 10%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";*/
+
 }
 .nosotrosHeader{
     grid-area: header;
@@ -49,15 +32,7 @@
 
 .contactoContainedor{/*estructura grid*/
     @include grid
-    /*height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-row: 10% 80% 10%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";  */ 
+    
 }
 .contactoHeader{
     grid-area: header;

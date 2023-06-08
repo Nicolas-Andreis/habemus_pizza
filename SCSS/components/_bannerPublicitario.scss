@@ -6,16 +6,13 @@
         display: flex;
         justify-content: center;
         @include sizes(95%,7rem);
-        //width: 95%;
-        //height: 7rem;
+
         background-color: $Naranja;
         border-radius: 0.5rem;
         bottom: 2rem;
 
         img {
             @include sizes(20%,100%);
-            //width: 20%;
-            //height: 100%;
             border-radius: 0.5rem 0 0 0.5rem;
             background-color: beige;
         }
