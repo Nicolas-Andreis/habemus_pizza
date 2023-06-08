@@ -110,17 +110,26 @@ body {
   margin-bottom: 2rem;
 }
 
-.formulario {
+.container-formulario {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-formulario div {
+  text-align: start;
+}
+.container-formulario .formulario {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 50%;
-  justify-content: center;
+  width: 100%;
+  margin: auto;
 }
-.formulario form {
+.container-formulario .formulario form {
   width: 100%;
 }
-.formulario form .datosContainer {
+.container-formulario .formulario form .datosContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -128,14 +137,14 @@ body {
   margin: 3.9rem 0 0 0;
   color: white;
 }
-.formulario form .datosContainer .datos {
+.container-formulario .formulario form .datosContainer .datos {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 4rem;
   align-items: center;
 }
-.formulario form .datosContainer .datos .campoDatos {
+.container-formulario .formulario form .datosContainer .datos .campoDatos {
   width: 90%;
   height: 1.7rem;
   margin-top: 0.7rem;
@@ -145,8 +154,14 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-.formulario form #texTarea {
-  width: 98%;
+.container-formulario .formulario form .container-textarea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-formulario .formulario form .container-textarea #texTarea {
+  width: 97%;
   height: 15.2rem;
   padding: 1rem;
   background-color: rgb(0, 0, 0);
@@ -156,32 +171,46 @@ body {
   border: 0px;
   color: white;
   margin-top: 3rem;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  /*pseudoelemto, cambia el color de placeholder*/
 }
-
-::placeholder {
+.container-formulario .formulario form .container-textarea #texTarea::placeholder {
   color: rgba(255, 255, 255, 0.595);
 }
 
-/*pseudoelemto, cambia el color de placeholder*/
 /*mapa de ubicacion*/
-.ubicacion {
+.container-ubicacion {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-ubicacion div {
+  width: 100%;
+  text-align: start;
+}
+.container-ubicacion .ubicacion {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   flex-direction: column;
   color: white;
 }
-.ubicacion p {
+.container-ubicacion .ubicacion p {
   /*se llama de general a particular*/
-  margin-bottom: 1rem;
+  margin: 2.1rem 0 0 0;
   /*separo el texto del mapa*/
   text-align: center;
 }
-.ubicacion iframe {
+.container-ubicacion .ubicacion iframe {
   width: 95%;
   border-radius: 0.5rem;
   height: 15rem;
+  margin-top: 3.4rem;
+  margin-bottom: 4rem;
 }
 
 .redes img {
@@ -556,14 +585,13 @@ align-items: center;*/
     /*width: 100%;
     height: 10rem;*/
   }
-  .contactoContainer .formulario .datosContainer {
+  .contactoContainer .formulario form .datosContainer {
     flex-direction: column;
+    margin-top: 2rem;
   }
-  .contactoContainer .formulario #texTarea {
+  .contactoContainer .formulario form #texTarea {
     width: 100%;
     height: 10rem;
-    /*width: 100%;
-    height: 10rem;*/
   }
 }
 /*////////////////                          MOBILE                   /////////////////////////////////////*/
@@ -664,21 +692,15 @@ align-items: center;*/
     margin-top: 0;
   }
   /*CONTACTO*/
-  .ubicacion {
-    width: 75%;
-  }
-  .ubicacion iframe {
+  .container-ubicacion .ubicacion iframe {
     width: 100%;
     height: 10rem;
     margin-bottom: 3rem;
   }
-  .formulario {
+  .conteiner-forumulario .formulario {
     width: 75%;
   }
-  .formulario form .datosContainer {
-    margin-top: 1rem;
-  }
-  #texTarea {
+  .conteiner-forumulario .formulario form #texTarea {
     width: 100%;
   }
 }

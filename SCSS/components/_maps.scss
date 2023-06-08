@@ -1,20 +1,34 @@
 /*mapa de ubicacion*/
-.ubicacion {
-@include flex-jcenter-acenter;
-    width: 50%;
+.container-ubicacion{
+    width: 75%;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    color: white;
-
-    p {
-        /*se llama de general a particular*/
-        margin-bottom: 1rem;
-        /*separo el texto del mapa*/
-        text-align: center;
+    div{
+        width: 100%;
+        text-align: start;
     }
-
-    iframe {
-        width: 95%;
-        border-radius: 0.5rem;
-        height: 15rem;
-    }
+    .ubicacion {
+        @include flex-jcenter-acenter;
+            width: 100%;
+            flex-direction: column;
+            color: white;
+        
+            p {
+                /*se llama de general a particular*/
+                margin: 2.1rem 0 0 0;
+                //margin-bottom: 1rem;
+                /*separo el texto del mapa*/
+                text-align: center;
+            }
+        
+            iframe {
+                width: 95%;
+                border-radius: 0.5rem;
+                height: 15rem;
+                margin-top: 3.4rem;
+                margin-bottom: 4rem;
+            }
+        }
 }
+

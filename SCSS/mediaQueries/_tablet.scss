@@ -94,14 +94,14 @@
         }
 
         .formulario {
-            .datosContainer {
-                flex-direction: column;
+            form{
+                .datosContainer {
+                    flex-direction: column;
+                    margin-top: 2rem;
+                }
+                #texTarea {
+                    @include sizes(100%, 10rem);
             }
-
-            #texTarea {
-                @include sizes(100%, 10rem);
-                /*width: 100%;
-                height: 10rem;*/
             }
         }
     }

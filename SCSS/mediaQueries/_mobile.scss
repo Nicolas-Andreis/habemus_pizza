@@ -21,10 +21,10 @@
     .texto {
         font-size: map-get($texo, mobile);
     }
-    
-    
-    
-    
+
+
+
+
 
 
     /*index*/
@@ -111,6 +111,7 @@
         img {
             display: none;
         }
+
         div {
             #textoBanners {
                 font-size: map-get($textoBanners, mobile);
@@ -140,23 +141,25 @@
     }
 
     /*CONTACTO*/
-    .ubicacion {
-        width: 75%;
-        iframe {
-            width: 100%;
-            height: 10rem;
-            margin-bottom: 3rem;
-        }
-    }
-    .formulario{
-        width: 75%;
-        form{
-            .datosContainer{
-                margin-top: 1rem;
+    .container-ubicacion {
+        .ubicacion {
+            iframe {
+                width: 100%;
+                height: 10rem;
+                margin-bottom: 3rem;
             }
         }
     }
-    #texTarea {
-        width: 100%;
+
+    .conteiner-forumulario {
+        .formulario {
+            width: 75%;
+
+            form {
+                #texTarea {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
