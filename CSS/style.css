@@ -474,6 +474,7 @@ align-items: center;*/
 
 .contactoContainer {
   display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1264px) {
