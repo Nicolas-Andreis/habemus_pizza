@@ -4,6 +4,8 @@
     align-items: center;
 //@include flex-jcenter-acenter;
 } 
+
+//ESTRUCTURA GRID CON MIXIN SIN PARAMETRO
 @mixin grid{ //MIXIN SIN PARAMETRO
 height: 100%;
 width: 100%;
@@ -20,7 +22,7 @@ grid-template-areas:
 @mixin sizes ($width, $height){// MIXIN CON PARAMETRO
     width: $width;
     height: $height;
-    //@include sizes(1rem,2rem);
+    //@include sizes(1rem,2rem); INVOCAR
 }
 
 
