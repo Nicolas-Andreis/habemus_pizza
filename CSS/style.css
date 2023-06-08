@@ -324,7 +324,7 @@ h2 {
 
 .redes {
   border-top: 1px solid rgb(255, 145, 15);
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 .redes .redesLink {
   transition: all 1.2s;
