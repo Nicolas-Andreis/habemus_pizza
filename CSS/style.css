@@ -588,11 +588,15 @@ nav {
     flex-direction: column;
     margin-top: 2rem;
   }
-  .contactoContainer .formulario form #texTarea {
+  .contactoContainer .formulario form .container-textarea #texTarea {
     width: 100%;
     height: 10rem;
   }
 }
+.redes {
+  margin-top: 3.5rem;
+}
+
 /*////////////////                          MOBILE                   /////////////////////////////////////*/
 /*MOBILE*/
 @media (max-width: 768px) {
@@ -648,6 +652,9 @@ nav {
   .cardsBox .box .box--texto {
     display: inline-grid;
   }
+  .cardsBox .box {
+    box-shadow: none;
+  }
   .cardsBox .box img {
     width: 4rem;
     vertical-align: text-top;
@@ -698,8 +705,9 @@ nav {
   .conteiner-forumulario .formulario {
     width: 75%;
   }
-  .conteiner-forumulario .formulario form #texTarea {
+  .conteiner-forumulario .formulario form .container-textarea #texTarea {
     width: 80%;
+    height: 10rem;
   }
 }
 

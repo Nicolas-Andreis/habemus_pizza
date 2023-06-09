@@ -93,15 +93,23 @@
 
         .formulario {
             width: 80%;
-            form{
+
+            form {
                 .datosContainer {
                     flex-direction: column;
                     margin-top: 2rem;
                 }
-                #texTarea {
-                    @include sizes(100%, 10rem);
-            }
+
+                .container-textarea {
+                    #texTarea {
+                        @include sizes(100%, 10rem);
+                    }
+                }
             }
         }
     }
+}
+
+.redes{
+    margin-top: 3.5rem;
 }

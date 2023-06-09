@@ -78,6 +78,7 @@
 
     .cardsBox {
         .box {
+            box-shadow: none;
             img {
                 width: 4rem;
                 vertical-align: text-top;
@@ -153,11 +154,13 @@
     .conteiner-forumulario {
         .formulario {
             width: 75%;
-
             form {
-                #texTarea {
-                    width: 80%;
-                }
+                .container-textarea{
+                    #texTarea {
+                        width: 80%;
+                        height: 10rem;
+                    }
+                } 
             }
         }
     }
