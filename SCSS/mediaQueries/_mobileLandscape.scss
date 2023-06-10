@@ -1,0 +1,105 @@
+@media (max-width: 768px) and (orientation: landscape) {
+    /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+    .icon-whatsapp:hover {
+        /*DESACTIVAR ROTACION WAPP*/
+        transform: none;
+    }
+
+    /*MAP GET*/
+    .titulos {
+        font-size: map-get($titulos, mobile);
+    }
+
+    .subtitulos {
+        font-size: map-get($subtitulos, mobile);
+    }
+
+    .texto {
+        font-size: map-get($texo, mobile);
+    }
+
+    #textoBanners {
+        font-size: map-get($textoBanners, mobile);
+        font-weight: map-get($textoBanners, mobile-weight);
+    }
+
+
+    /*INDEX*/
+    .contenedorCarousel{
+        width: 50%;
+    }
+    .contenedorTextoMain{
+        width: 50%;
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+    }
+
+    /*MENU*/
+.menuContainer{
+    .menu{
+        height: 80%;
+    }
+}
+
+/*PROMOS*/
+
+.cardsBox {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    /* Oculta visualmente la barra de desplazamiento */
+    white-space: nowrap;
+    width: 100%;
+
+    .box {
+        
+        @include sizes(60%, auto);
+        flex: 1 0 auto;
+        display: inline-block;
+        white-space: normal;
+        margin-left: 10px;
+        .box--texto {
+            display: inline-grid;
+            padding-left: 0.5rem;
+        }
+        img{
+            vertical-align: text-top;
+        }
+    }
+}
+.banner{
+    img{
+        display: none;
+    }
+}
+
+/*NOSOTROS*/
+.cardsBox-nosotros {
+    /*OCULTA GALERIA*/
+    display: none;
+}
+
+.slide {
+    display: block;
+    /*HACE VISIBLE EL CARROUSEL*/
+}
+
+.cardContainer {
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.nosotrosFooter {
+    margin-top: 0;
+}
+}

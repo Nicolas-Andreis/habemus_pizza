@@ -1,4 +1,4 @@
-@media (max-width: 1264px) {
+@media (min-width: 992px) and (max-width: 1264px) {
     /*PROMOS*/
         .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
             transform: none;
@@ -15,4 +15,9 @@
             }
         }
     }
+    }
+
+    /*contacto*/
+    .redes{
+        margin-top: 0.5rem;
     }

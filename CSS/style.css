@@ -495,7 +495,7 @@ nav {
   align-items: center;
 }
 
-@media (max-width: 1264px) {
+@media (min-width: 992px) and (max-width: 1264px) {
   /*PROMOS*/
   .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
     transform: none;
@@ -513,6 +513,11 @@ nav {
     height: 4rem;
   }
 }
+/*contacto*/
+.redes {
+  margin-top: 0.5rem;
+}
+
 /*////////////////                          TABLET                   /////////////////////////////////////*/
 /*TABLET*/
 @media (max-width: 992px) {
@@ -594,12 +599,97 @@ nav {
   }
 }
 .redes {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+  .icon-whatsapp:hover {
+    /*DESACTIVAR ROTACION WAPP*/
+    transform: none;
+  }
+  /*MAP GET*/
+  .titulos {
+    font-size: 1.2rem;
+  }
+  .subtitulos {
+    font-size: 1.1rem;
+  }
+  .texto {
+    font-size: 0.9rem;
+  }
+  #textoBanners {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  /*INDEX*/
+  .contenedorCarousel {
+    width: 50%;
+  }
+  .contenedorTextoMain {
+    width: 50%;
+  }
+  .contenedorTextoMain h1 {
+    font-size: 2.5rem;
+  }
+  .contenedorTextoMain h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .contenedorTextoMain p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  /*MENU*/
+  .menuContainer .menu {
+    height: 80%;
+  }
+  /*PROMOS*/
+  .cardsBox {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    /* Oculta visualmente la barra de desplazamiento */
+    white-space: nowrap;
+    width: 100%;
+  }
+  .cardsBox .box {
+    width: 60%;
+    height: auto;
+    flex: 1 0 auto;
+    display: inline-block;
+    white-space: normal;
+    margin-left: 10px;
+  }
+  .cardsBox .box .box--texto {
+    display: inline-grid;
+    padding-left: 0.5rem;
+  }
+  .cardsBox .box img {
+    vertical-align: text-top;
+  }
+  .banner img {
+    display: none;
+  }
+  /*NOSOTROS*/
+  .cardsBox-nosotros {
+    /*OCULTA GALERIA*/
+    display: none;
+  }
+  .slide {
+    display: block;
+    /*HACE VISIBLE EL CARROUSEL*/
+  }
+  .cardContainer {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .nosotrosFooter {
+    margin-top: 0;
+  }
+}
 /*////////////////                          MOBILE                   /////////////////////////////////////*/
 /*MOBILE*/
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
   /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
   .icon-whatsapp:hover {
     /*DESACTIVAR ROTACION WAPP*/
@@ -708,6 +798,9 @@ nav {
   .conteiner-forumulario .formulario form .container-textarea #texTarea {
     width: 80%;
     height: 10rem;
+  }
+  .redes {
+    margin-top: 3.5rem;
   }
 }
 

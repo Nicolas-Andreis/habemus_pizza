@@ -1,7 +1,7 @@
 /*////////////////                          MOBILE                   /////////////////////////////////////*/
 
 /*MOBILE*/
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
 
     /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
     .icon-whatsapp:hover {
@@ -164,4 +164,10 @@
             }
         }
     }
+    .redes{
+        margin-top: 3.5rem;
+    }
 }
+
+
+
