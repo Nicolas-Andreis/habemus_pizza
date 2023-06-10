@@ -22,7 +22,13 @@
         font-size: map-get($texo, mobile);
     }
 
-
+    /*btn wapp*/
+    .wsp{
+        bottom: 1.5rem;
+        .icon-whatsapp{
+            width: 4rem;
+        }
+    }
 
 
 

@@ -723,6 +723,13 @@ nav {
   .texto {
     font-size: 0.9rem;
   }
+  /*btn wapp*/
+  .wsp {
+    bottom: 1.5rem;
+  }
+  .wsp .icon-whatsapp {
+    width: 4rem;
+  }
   /*index*/
   .contenedorTextoMain h1 {
     font-size: 3rem;
