@@ -622,26 +622,36 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
   }
+  /*btn wapp*/
+  .wsp {
+    bottom: 1rem;
+  }
+  .wsp .icon-whatsapp {
+    width: 3.2rem;
+  }
   /*INDEX*/
   .contenedorCarousel {
-    width: 50%;
+    width: 40%;
   }
   .contenedorTextoMain {
-    width: 50%;
+    width: 60%;
   }
   .contenedorTextoMain h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
   .contenedorTextoMain h2 {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 0.3rem;
   }
   .contenedorTextoMain p {
-    margin-top: 1rem;
-    font-size: 1rem;
+    margin-top: 0.1rem;
+    font-size: 0.8rem;
   }
   /*MENU*/
-  .menuContainer .menu {
+  .menuContainer div {
+    width: 33.33%;
+  }
+  .menuContainer div .menu {
     height: 80%;
   }
   /*PROMOS*/
@@ -651,14 +661,15 @@ nav {
     /* Oculta visualmente la barra de desplazamiento */
     white-space: nowrap;
     width: 100%;
+    margin: 0.5rem 0;
   }
   .cardsBox .box {
-    width: 60%;
+    width: 40%;
     height: auto;
     flex: 1 0 auto;
     display: inline-block;
     white-space: normal;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .cardsBox .box .box--texto {
     display: inline-grid;
@@ -666,6 +677,13 @@ nav {
   }
   .cardsBox .box img {
     vertical-align: text-top;
+  }
+  .cards {
+    width: 30%;
+    justify-content: center;
+  }
+  .banner {
+    height: 5rem;
   }
   .banner img {
     display: none;

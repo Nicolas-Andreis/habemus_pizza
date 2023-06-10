@@ -23,32 +23,43 @@
         font-weight: map-get($textoBanners, mobile-weight);
     }
 
+    /*btn wapp*/
+    .wsp{
+        bottom: 1rem;
+        .icon-whatsapp{
+            width: 3.2rem;
+        }
+    }
+    
 
     /*INDEX*/
     .contenedorCarousel{
-        width: 50%;
+        width: 40%;
     }
     .contenedorTextoMain{
-        width: 50%;
+        width: 60%;
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.1rem;
         }
 
         h2 {
-            font-size: 1.2rem;
-            margin-top: 1rem;
+            font-size: 1rem;
+            margin-top: 0.3rem;
         }
 
         p {
-            margin-top: 1rem;
-            font-size: 1rem;
+            margin-top: 0.1rem;
+            font-size: 0.8rem;
         }
     }
 
     /*MENU*/
 .menuContainer{
-    .menu{
-        height: 80%;
+    div{
+        width: 33.33%;
+        .menu{
+            height: 80%;
+        }
     }
 }
 
@@ -60,14 +71,14 @@
     /* Oculta visualmente la barra de desplazamiento */
     white-space: nowrap;
     width: 100%;
-
+    margin: 0.5rem 0;
     .box {
         
-        @include sizes(60%, auto);
+        @include sizes(40%, auto);
         flex: 1 0 auto;
         display: inline-block;
         white-space: normal;
-        margin-left: 10px;
+        margin-left: 20px;
         .box--texto {
             display: inline-grid;
             padding-left: 0.5rem;
@@ -77,7 +88,12 @@
         }
     }
 }
+.cards{
+    width: 30%;
+    justify-content: center;
+}
 .banner{
+    height: 5rem;
     img{
         display: none;
     }
