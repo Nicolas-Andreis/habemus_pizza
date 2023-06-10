@@ -324,9 +324,9 @@ h2 {
 
 .redes {
   border-top: 1px solid rgb(255, 145, 15);
-  margin-top: 0.5rem;
 }
 .redes .redesLink {
+  margin-top: 0.5rem;
   transition: all 1.2s;
 }
 .redes .redesLink:hover {
@@ -594,7 +594,7 @@ nav {
   }
 }
 .redes {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 
 /*////////////////                          MOBILE                   /////////////////////////////////////*/

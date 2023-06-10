@@ -1,7 +1,7 @@
 .redes{
     border-top: 1px solid $Naranja;
-    margin-top: 0.5rem;
     .redesLink{
+        margin-top: 0.5rem;
         transition: all 1.2s;
         &:hover {
             transform: rotateY(360deg);
