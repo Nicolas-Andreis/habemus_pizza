@@ -967,11 +967,6 @@ nav {
     width: 0.1px;
     /* le doy una dimension no visible */
   }
-  .cardBs {
-    display: none;
-    justify-content: center;
-    flex-basis: 40%;
-  }
   .imagenPublicitaria {
     width: 95%;
   }
@@ -1009,6 +1004,9 @@ nav {
   .conteiner-forumulario .formulario form .container-textarea #texTarea {
     width: 80%;
     height: 10rem;
+  }
+  .containerEnviar {
+    margin-bottom: 1.5rem; /*separa solo el boton del footer*/
   }
   .redes {
     margin-top: 3.5rem;

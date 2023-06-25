@@ -191,14 +191,6 @@
         /* le doy una dimension no visible */
     }
 
-
-    .cardBs {
-        display: none;
-        justify-content: center;
-        flex-basis: 40%;
-    }
-
-
     .imagenPublicitaria{
         width: 95%;
         .banner {
@@ -260,7 +252,9 @@
             }
         }
     }
-
+    .containerEnviar{
+        margin-bottom: 1.5rem; /*separa solo el boton del footer*/
+    }
     .redes {
         margin-top: 3.5rem;
     }
