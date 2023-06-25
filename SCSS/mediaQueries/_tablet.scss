@@ -55,6 +55,17 @@
         }
     }
 
+    .containerCardsPromos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .cardBasis{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     /*NOSOTROS*/
     .cardsBox-nosotros {
         flex-wrap: wrap;
@@ -63,7 +74,9 @@
             flex-basis: 33.33%;
             display: flex;
             justify-content: center;
-            margin-bottom: 1rem;
+            img{
+                width: 15rem;
+            }
         }
     }
 

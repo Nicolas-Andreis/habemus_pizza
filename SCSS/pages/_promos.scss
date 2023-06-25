@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    .containerCardsPromos{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+            justify-content: space-around;
+    }
 }
 .contenedorCards{
     display: flex;

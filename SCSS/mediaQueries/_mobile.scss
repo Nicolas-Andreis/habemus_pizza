@@ -23,9 +23,10 @@
     }
 
     /*btn wapp*/
-    .wsp{
+    .wsp {
         bottom: 1.5rem;
-        .icon-whatsapp{
+
+        .icon-whatsapp {
             width: 4rem;
         }
     }
@@ -34,6 +35,9 @@
 
 
     /*index*/
+    .indexMain{
+        height: auto
+    }
     .contenedorTextoMain {
         h1 {
             font-size: 3rem;
@@ -82,9 +86,92 @@
         }
     }
 
+    .promosMain {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        .containerCardsPromos{
+            width: 90%;
+            justify-content: center;
+            
+            .cardBasis{
+                width: 100%;
+                .cardPromos {
+                    height: auto;
+                    background-color: $grisoscuro;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    border-radius: $bordesRedondeados;
+                    margin-top: 1rem;
+        
+                    .imgCards {
+                        height: 8rem;
+                        width: 8rem;
+                        object-fit: cover;
+                        padding: 0.5rem;
+                        border-radius: 1rem;
+                    }
+        
+                    .card-texto {
+                        margin: 0.3rem auto 0 auto;
+                        text-align: center;
+        
+                        h5 {
+                            color: $Naranja;
+                        }
+        
+                        p {
+                            color: white;
+                        }
+        
+                        a {
+                            font-size: map-get($texo, mobile);
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+        
+                    button {
+                        position: static;
+                        height: 3rem;
+                        background: none;
+                        border: none;
+                        padding-bottom: 7.5rem;
+                        padding-right: 0.3rem;
+                        .inactivo {
+                            width: 1.5rem;
+                            opacity: 35%;
+                        }
+        
+                        .activo {
+                            width: 1.5rem;
+                            display: none;
+                        }
+        
+                        &:active {
+                            .inactivo {
+                                display: none;
+                            }
+        
+                            .activo {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+                }
+                
+            }
+        
+
     .cardsBox {
         .box {
             box-shadow: none;
+
             img {
                 width: 4rem;
                 vertical-align: text-top;
@@ -107,25 +194,29 @@
     }
 
 
-    .cards {
+    .cardBs {
+        display: none;
         justify-content: center;
         flex-basis: 40%;
     }
 
 
-
-    .banner {
-        img {
-            display: none;
-        }
-
-        div {
-            #textoBanners {
-                font-size: map-get($textoBanners, mobile);
-                font-weight: map-get($textoBanners, mobile-weight);
+    .imagenPublicitaria{
+        width: 85%;
+        .banner {
+            img {
+                display: none;
+            }
+    
+            div {
+                #textoBanners {
+                    font-size: map-get($textoBanners, mobile);
+                    font-weight: map-get($textoBanners, mobile-weight);
+                }
             }
         }
     }
+    
 
     /*NOSOTROS*/
     .cardsBox-nosotros {
@@ -160,20 +251,19 @@
     .conteiner-forumulario {
         .formulario {
             width: 75%;
+
             form {
-                .container-textarea{
+                .container-textarea {
                     #texTarea {
                         width: 80%;
                         height: 10rem;
                     }
-                } 
+                }
             }
         }
     }
-    .redes{
+
+    .redes {
         margin-top: 3.5rem;
     }
 }
-
-
-

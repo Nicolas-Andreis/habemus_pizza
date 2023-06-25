@@ -1,0 +1,70 @@
+.promosMain {
+    align-items: center;
+
+    .cardPromos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 12rem;
+        height: 17rem;
+        background-color: $grisoscuro;
+        justify-content: space-between;
+        border-radius: $bordesRedondeados;
+        margin-top: 1rem;
+
+        .imgCards {
+            width: 11rem;
+            object-fit: cover;
+            padding: 0.5rem;
+            border-radius: 1rem;
+        }
+
+        .card-texto {
+            margin: 0.3rem auto 0 auto;
+            text-align: center;
+
+            h5 {
+                color: $Naranja;
+            }
+
+            p {
+                color: white;
+            }
+
+            a {
+                font-size: map-get($texo, mobile);
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        button {
+            position: relative;
+            left: 4.9rem;
+            bottom: 2rem;
+            height: 3rem;
+            background: none;
+            border: none;
+            padding-bottom: 7.5rem;
+            padding-right: 0.3rem;
+            .inactivo {
+                width: 1.5rem;
+                opacity: 35%;
+            }
+
+            .activo {
+                width: 1.5rem;
+                display: none;
+            }
+
+            &:active {
+                .inactivo {
+                    display: none;
+                }
+
+                .activo {
+                    display: block;
+                }
+            }
+        }
+    }
+}
