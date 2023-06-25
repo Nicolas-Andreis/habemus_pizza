@@ -1,7 +1,10 @@
 main {
     height: 75%;
 }
-
+.overflow-hidden{
+    overflow-x: hidden;
+    overflow-y: auto!important;
+}
 
 .indexContainer{
     min-height: 100%;
