@@ -19,7 +19,7 @@
     }
 
     .texto {
-        font-size: map-get($texo, mobile);
+        font-size: map-get($texto, mobile);
     }
 
     /*btn wapp*/
@@ -127,7 +127,7 @@
                         }
         
                         a {
-                            font-size: map-get($texo, mobile);
+                            font-size: map-get($texto, mobile);
                             margin-bottom: 0.5rem;
                         }
                     }

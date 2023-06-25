@@ -21,7 +21,7 @@ body{
 }
 
 .texto{
-    font-size: map-get($texo, desktop);
+    font-size: map-get($texto, desktop);
 }
 .sombra{
     box-shadow: map-get($sombra, densa);
