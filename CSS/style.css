@@ -261,13 +261,6 @@ h2 {
   color: white;
 }
 
-.cardBs {
-  transition: all 1s;
-}
-.cardBs:hover {
-  transform: scale(1.1);
-}
-
 .promosMain {
   align-items: center;
 }
@@ -522,7 +515,6 @@ nav {
   color: rgb(255, 255, 255);
 }
 .contenedorTextoMain h2 {
-  margin-left: 6.5rem;
   font-size: 3rem;
 }
 .contenedorTextoMain h1 {
