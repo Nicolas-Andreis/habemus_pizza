@@ -840,10 +840,10 @@ nav {
   }
   /*btn wapp*/
   .wsp {
-    bottom: 5rem;
+    bottom: 4rem;
   }
   .wsp .icon-whatsapp {
-    width: 4rem;
+    width: 3rem;
   }
   /*index*/
   .contenedorTextoMain h1 {
@@ -851,7 +851,7 @@ nav {
   }
   .contenedorTextoMain h2 {
     font-size: 1.5rem;
-    margin-top: 3.5rem;
+    margin-top: 1rem;
   }
   .contenedorTextoMain p {
     font-size: 1rem;
