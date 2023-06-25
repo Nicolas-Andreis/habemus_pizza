@@ -328,7 +328,7 @@ h2 {
 }
 
 .imagenPublicitaria {
-  margin: 1rem 0;
+  margin: 1rem auto;
   width: 100%;
 }
 .imagenPublicitaria .banner {
@@ -408,8 +408,13 @@ main {
   height: 75%;
 }
 
-.indexMain {
-  height: 85vh;
+.indexContainer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.indexContainer .indexMain {
+  flex-grow: 1; /* Permite que el contenido principal crezca y ocupe el espacio restante */
 }
 
 footer {
@@ -422,6 +427,12 @@ footer {
 }
 footer .copyright {
   text-align: center;
+}
+
+.indexFooter {
+  height: 15%;
+  margin-top: auto;
+  flex-shrink: 0; /* Evita que el footer se encoja si hay poco contenido */
 }
 
 nav {
@@ -823,9 +834,6 @@ nav {
     width: 4rem;
   }
   /*index*/
-  .indexMain {
-    height: auto;
-  }
   .contenedorTextoMain h1 {
     font-size: 3rem;
   }

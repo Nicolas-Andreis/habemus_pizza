@@ -1,6 +1,13 @@
 main {
     height: 75%;
 }
-.indexMain{
-    height: 85vh
+
+
+.indexContainer{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    .indexMain{
+        flex-grow: 1; /* Permite que el contenido principal crezca y ocupe el espacio restante */
+    }
 }

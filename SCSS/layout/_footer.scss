@@ -8,3 +8,9 @@ footer{
         text-align: center;
     }
 }
+
+.indexFooter{
+    height: 15%;
+    margin-top: auto; 
+    flex-shrink: 0; /* Evita que el footer se encoja si hay poco contenido */
+}
