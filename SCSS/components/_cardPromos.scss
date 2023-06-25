@@ -11,6 +11,13 @@
         justify-content: space-between;
         border-radius: $bordesRedondeados;
         margin-top: 1rem;
+        & {
+            transition: all 1s;
+        }
+    
+        &:hover {
+            transform: scale(1.1);
+        }
 
         .imgCards {
             width: 11rem;

@@ -282,6 +282,12 @@ h2 {
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
+.promosMain .cardPromos {
+  transition: all 1s;
+}
+.promosMain .cardPromos:hover {
+  transform: scale(1.1);
+}
 .promosMain .cardPromos .imgCards {
   width: 11rem;
   object-fit: cover;
@@ -967,7 +973,7 @@ nav {
     flex-basis: 40%;
   }
   .imagenPublicitaria {
-    width: 85%;
+    width: 95%;
   }
   .imagenPublicitaria .banner img {
     display: none;
