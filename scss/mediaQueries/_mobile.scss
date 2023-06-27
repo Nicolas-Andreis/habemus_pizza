@@ -169,8 +169,8 @@
 
     .cardsBox {
         .box {
-            box-shadow: none;
-
+            //box-shadow: none;
+            box-shadow: map-get($sombra, densa);
             img {
                 width: 4rem;
                 vertical-align: text-top;

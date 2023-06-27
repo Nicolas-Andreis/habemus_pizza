@@ -11,6 +11,7 @@
         justify-content: space-between;
         border-radius: $bordesRedondeados;
         margin-top: 1rem;
+        box-shadow: map-get($sombra, densa);
         & {
             transition: all 1s;
         }
