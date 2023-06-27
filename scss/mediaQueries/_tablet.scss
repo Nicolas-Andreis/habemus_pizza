@@ -1,0 +1,128 @@
+/*////////////////                          TABLET                   /////////////////////////////////////*/
+/*TABLET*/
+@media (max-width: 992px) {
+    /*es igual o menor que 992px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+
+    .icon-whatsapp:hover {
+        /*DESACTIVAR ROTACION WAPP*/
+        transform: none;
+    }
+
+    /*MAP GET*/
+    .titulos {
+        font-size: map-get($titulos, tablet);
+    }
+
+    .subtitulos {
+        font-size: map-get($subtitulos, tablet);
+    }
+
+    .texto {
+        font-size: map-get($texto, tablet);
+    }
+
+
+    #textoBanners {
+        font-size: map-get($textoBanners, tablet);
+        font-weight: map-get($textoBanners, tablet-weight);
+    }
+
+
+    /*index*/
+    .contenedorTextoMain {
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        p {
+            font-size: rem;
+        }
+    }
+
+    /*PROMOS*/
+
+
+    .cardsBox {
+        .box:hover {
+            /*utilizacion*/
+            transform: none;
+            /* Elimina la transformación en la media query */
+        }
+    }
+
+    .containerCardsPromos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .cardBasis{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    /*NOSOTROS*/
+    .cardsBox-nosotros {
+        flex-wrap: wrap;
+
+        .box-nosotros {
+            flex-basis: 33.33%;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 15rem;
+            }
+        }
+    }
+
+    .carrousel-nosotros {
+        display: none;
+    }
+
+    .nosotrosFooter {
+        margin-top: 6rem;
+    }
+
+    /*CONTACTO*/
+    .contactoContainer {
+        flex-direction: column;
+        align-items: center;
+
+        .ubicacion {
+            p {
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            iframe {
+                @include sizes(80%, 10rem);
+            }
+        }
+
+        .formulario {
+            width: 80%;
+
+            form {
+                .datosContainer {
+                    flex-direction: column;
+                    margin-top: 2rem;
+                }
+
+                .container-textarea {
+                    #texTarea {
+                        @include sizes(100%, 10rem);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.redes{
+    margin-top: 1rem;
+}

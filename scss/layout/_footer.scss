@@ -1,0 +1,17 @@
+footer{
+    background: rgb(36 36 36);
+    color: rgb(255, 255, 255);
+    box-shadow: map-get($sombra, densa);
+
+    @include flex-jcenter-acenter;
+    flex-direction: column;
+    .copyright{
+        text-align: center;
+    }
+}
+
+.indexFooter{
+    height: 15%;
+    margin-top: auto; 
+    flex-shrink: 0; /* Evita que el footer se encoja si hay poco contenido */
+}

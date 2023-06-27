@@ -1,0 +1,27 @@
+.cardsBox-nosotros{
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    .box-nosotros {
+        flex-basis: 33.33%;
+        margin: 0 auto 1rem auto;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 20rem;
+            border-radius: $bordesRedondeados;
+            transition: all 1s; /* puede ser 'all' también */
+            &:hover {
+                transform: scale(1.5,1.5);
+            }
+        }
+    }
+}
+
+.carrousel-nosotros{
+    display: none;
+}

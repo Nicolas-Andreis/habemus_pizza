@@ -1,0 +1,262 @@
+/*////////////////                          MOBILE                   /////////////////////////////////////*/
+
+/*MOBILE*/
+@media (max-width: 768px) and (orientation: portrait) {
+
+    /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
+    .icon-whatsapp:hover {
+        /*DESACTIVAR ROTACION WAPP*/
+        transform: none;
+    }
+
+    /*MAP GET*/
+    .titulos {
+        font-size: map-get($titulos, mobile);
+    }
+
+    .subtitulos {
+        font-size: map-get($subtitulos, mobile);
+    }
+
+    .texto {
+        font-size: map-get($texto, mobile);
+    }
+
+    /*btn wapp*/
+    .wsp {
+        bottom: 4rem;
+
+        .icon-whatsapp {
+            width: 3rem;
+        }
+    }
+    
+
+
+
+    /*index*/
+
+    .contenedorTextoMain {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 0.3rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .carousel-item {
+        img {
+            object-fit: contain;
+        }
+    }
+
+    /*MENU*/
+    section .menu {
+        width: 100%;
+    }
+
+    /*PROMOS*/
+
+    .cardsBox {
+        overflow-x: auto;
+        scrollbar-width: thin;
+        /* Oculta visualmente la barra de desplazamiento */
+        white-space: nowrap;
+        width: 100%;
+
+        .box {
+            @include sizes(80%, auto);
+            flex: 1 0 auto;
+            display: inline-block;
+            white-space: normal;
+            margin-left: 10px;
+
+            .box--texto {
+                display: inline-grid;
+            }
+        }
+    }
+
+    .promosMain {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        .containerCardsPromos{
+            width: 90%;
+            justify-content: center;
+            
+            .cardBasis{
+                width: 100%;
+                .cardPromos {
+                    height: auto;
+                    background-color: $grisoscuro;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    border-radius: $bordesRedondeados;
+                    margin-top: 1rem;
+        
+                    .imgCards {
+                        height: 8rem;
+                        width: 8rem;
+                        object-fit: cover;
+                        padding: 0.5rem;
+                        border-radius: 1rem;
+                    }
+        
+                    .card-texto {
+                        margin: 0.3rem auto 0 auto;
+                        text-align: center;
+        
+                        h5 {
+                            color: $Naranja;
+                        }
+        
+                        p {
+                            color: white;
+                        }
+        
+                        a {
+                            font-size: map-get($texto, mobile);
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+        
+                    button {
+                        position: static;
+                        height: 3rem;
+                        background: none;
+                        border: none;
+                        padding-bottom: 7.5rem;
+                        padding-right: 0.3rem;
+                        .inactivo {
+                            width: 1.5rem;
+                            opacity: 35%;
+                        }
+        
+                        .activo {
+                            width: 1.5rem;
+                            display: none;
+                        }
+        
+                        &:active {
+                            .inactivo {
+                                display: none;
+                            }
+        
+                            .activo {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+                }
+                
+            }
+        
+
+    .cardsBox {
+        .box {
+            //box-shadow: none;
+            box-shadow: map-get($sombra, densa);
+            img {
+                width: 4rem;
+                vertical-align: text-top;
+                margin-right: 10%;
+            }
+
+            &:hover {
+                /*utilizacion*/
+                transform: none;
+                /* Elimina la transformación en la media query */
+            }
+        }
+    }
+
+
+    .cardsBox::-webkit-scrollbar {
+        /* Personalizar la apariencia de la barra de desplazamiento en navegadores basados en WebKit */
+        width: 0.1px;
+        /* le doy una dimension no visible */
+    }
+
+    .imagenPublicitaria{
+        width: 95%;
+        .banner {
+            img {
+                display: none;
+            }
+    
+            div {
+                #textoBanners {
+                    font-size: map-get($textoBanners, mobile);
+                    font-weight: map-get($textoBanners, mobile-weight);
+                }
+            }
+        }
+    }
+    
+
+    /*NOSOTROS*/
+    .cardsBox-nosotros {
+        /*OCULTA GALERIA*/
+        display: none;
+    }
+
+    .slide {
+        display: block;
+        /*HACE VISIBLE EL CARROUSEL*/
+    }
+
+    .cardContainer {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .nosotrosFooter {
+        margin-top: 0;
+    }
+
+    /*CONTACTO*/
+    .container-ubicacion {
+        .ubicacion {
+            iframe {
+                height: 10rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .conteiner-forumulario {
+        .formulario {
+            width: 75%;
+
+            form {
+                .container-textarea {
+                    #texTarea {
+                        width: 80%;
+                        height: 10rem;
+                    }
+                }
+            }
+        }
+    }
+    .containerEnviar{
+        margin-bottom: 1.5rem; /*separa solo el boton del footer*/
+    }
+    .redes {
+        margin-top: 3.5rem;
+    }
+}
