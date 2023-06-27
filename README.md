@@ -1,4 +1,4 @@
-# <img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/74090830-2705-422c-aeca-ae3c204ebb78" alt="Logo de pizza"  height="40"> Habemus Pizza<img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/7dba2e1d-bebc-4991-866e-7c55d449e471" alt="llama"  height="50"> 
+# <img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/52edbec1-8546-43a3-8c1c-710b4cf82925" alt="Logo de pizza"  height="40"> Habemus Pizza<img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/7dba2e1d-bebc-4991-866e-7c55d449e471" alt="llama"  height="50"> 
 
 
 En este sitio web diseñado para encontrar una experiencia única y amigable. El objetivo principal de este proyecto fue crear una landing page efectiva que sirva como embudo de ventas y dirija la atención del usuario hacia una aplicación externa, donde podrán concluir la compra de deliciosos productos.
