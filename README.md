@@ -4,7 +4,8 @@ En este sitio web diseñado para encontrar una experiencia única y amigable. El
 
 Se eligio una combinación de colores cautivadora, con tonalidades de naranja, negro y grises, que buscan relajar la vista y crear un ambiente acogedor. Queremos que los usuarios se sientan a gusto mientras navegan por el sitio y descubren las deliciosas propuestas.
 
-![vistas mobile](https://github.com/Nicolas-Andreis/habemus-pizza-3/assets/111246225/e27d3666-6092-41e2-8e24-a397a0fa0b41)
+
+![vistas mobile](https://github.com/Nicolas-Andreis/habemus-pizza-3/assets/111246225/3b8367e6-e30c-44ab-8c70-ffe260868f2f)
 
 A medida que los usuarios exploran el sitio, encontrarán secciones informativas sobre nuestro menú, promociones especiales, información sobre nosotros y una forma sencilla de contactarnos. Cada sección ha sido diseñada de manera intuitiva y clara, para que los usuarios puedan encontrar la información que buscan sin dificultad.
 
