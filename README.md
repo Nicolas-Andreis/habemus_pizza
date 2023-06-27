@@ -23,3 +23,8 @@ El diseño de este sitio ha sido cuidadosamente trabajado para ser completamente
 
 <img src="https://img.shields.io/badge/_HTML-brightgreen?logo=html5&logoColor=white&labelColor=black&color=%23fb6800" alt="Logo de HTML"  height="30"><img src="https://img.shields.io/badge/_CSS-brightgreen?logo=css3&logoColor=white&labelColor=black&color=%23039be5" alt="Logo de CSS"  height="30">
 <img src="https://img.shields.io/badge/_BOOTSTRAP-brightgreen?logo=BOOTSTRAP&logoColor=white&labelColor=black&color=%23673ab7" alt="Logo de bootstrap"  height="30"><img src="https://img.shields.io/badge/_SASS-brightgreen?logo=sass&logoColor=white&labelColor=black&color=%23e9608f" alt="Logo de SASS"  height="30"><img src="https://img.shields.io/badge/_TERMINAL-brightgreen?logo=WINDOWS%20TERMINAL&logoColor=white&labelColor=black&color=%23787878" alt="Logo de TERMINAL"  height="30">
+
+## Wireframes mobile
+<img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/d8928050-c98a-4b3b-8b44-3187bb0feb21" alt="index"  height="70"> 
+
+## Wireframes desktop
