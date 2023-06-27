@@ -26,6 +26,7 @@ El diseño de este sitio ha sido cuidadosamente trabajado para ser completamente
 
 ## Wireframes mobile
 <img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/d8928050-c98a-4b3b-8b44-3187bb0feb21" alt="index"  height="300">    <img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/b5b6335a-5d2a-4589-9004-3f4ccc44127e" alt="menu"  height="300">    <img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/e8f131ad-5b83-4f3a-8107-eea1da890f9e" alt="promos"  height="300">    <img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/84997cfe-5347-46b4-a09f-068eb607eed0" alt="nosotros"  height="300">    <img src="https://github.com/Nicolas-Andreis/habemus_pizza/assets/111246225/f5e8aade-e449-42e8-9949-f3d4dbb8b1ee" alt="contacto"  height="300">
+
 (Haz clic para ampliar la imagen)
 
 ## Wireframes desktop
