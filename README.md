@@ -12,4 +12,4 @@ A medida que los usuarios exploran el sitio, encontrarán secciones informativas
 ![vistas landscape](https://github.com/Nicolas-Andreis/habemus-pizza-3/assets/111246225/92a54b44-f10e-4ca4-977c-cf993d3c60c7)
 
 
-El diseño de este sitio ha sido cuidadosamente trabajado para ser completamente responsive y adaptarse a cualquier dispositivo, ya sea que estés navegando en tu teléfono móvil, tablet o computadora. Se procuro que la experiencia sea fluida tanto en modo horizontal como vertical, para que los usuarios puedan disfrutar de todos nuestros contenidos sin problemas.
+El diseño de este sitio ha sido cuidadosamente trabajado para ser completamente responsive y adaptarse a cualquier dispositivo, ya sea que estés navegando en tu teléfono móvil, tablet o computadora. Se procuro que la experiencia sea fluida tanto en modo horizontal como vertical, para que los usuarios puedan disfrutar de todos los contenidos sin problemas.
