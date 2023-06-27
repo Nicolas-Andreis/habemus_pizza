@@ -6,7 +6,7 @@ En este sitio web diseñado para encontrar una experiencia única y amigable. El
 ![full responsive](https://github.com/Nicolas-Andreis/habemus-pizza-3/assets/111246225/f796c323-28e9-4446-9796-f894255bc286)
 
 Se eligio una combinación de colores cautivadora, con tonalidades de naranja, negro y grises, que buscan relajar la vista y crear un ambiente acogedor. Queremos que los usuarios se sientan a gusto mientras navegan por el sitio.
-
+ 
 
 ![vistas mobile](https://github.com/Nicolas-Andreis/habemus-pizza-3/assets/111246225/3b8367e6-e30c-44ab-8c70-ffe260868f2f)
 
