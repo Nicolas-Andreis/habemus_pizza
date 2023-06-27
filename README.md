@@ -1,5 +1,5 @@
 # Habemus Pizza 3
-En este sitio web diseñado para encontrar una experiencia única y amigable. El objetivo principal de este proyecto fue crear una landing page efectiva que sirva como embudo de ventas y dirija la atención del usuario hacia nuestra aplicación externa, donde podrán concluir la compra de nuestros deliciosos productos.
+En este sitio web diseñado para encontrar una experiencia única y amigable. El objetivo principal de este proyecto fue crear una landing page efectiva que sirva como embudo de ventas y dirija la atención del usuario hacia una aplicación externa, donde podrán concluir la compra de nuestros deliciosos productos.
 ![full responsive](https://github.com/Nicolas-Andreis/habemus-pizza-3/assets/111246225/2171532a-b710-43f2-ba8e-9aa68e69f0d8)
 
 El diseño de este sitio ha sido cuidadosamente trabajado para ser completamente responsive y adaptarse a cualquier dispositivo, ya sea que estés navegando en tu teléfono móvil, tablet o computadora. Nos aseguramos de que la experiencia sea fluida tanto en modo horizontal como vertical, para que los usuarios puedan disfrutar de todos nuestros contenidos sin problemas.
