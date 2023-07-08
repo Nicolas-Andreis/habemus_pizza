@@ -282,7 +282,7 @@
             justify-content: initial;
             margin-top: 0;
             height: 100vh;
-            width: 25rem;
+            width: 100%;
             .containerImgModal {
                 .producto{
                     border-radius: 0;
@@ -303,6 +303,7 @@
             .containerBodyActive {
                 border-radius: 2rem 2rem 0 0;
                 padding-bottom: 1.5rem;
+                width: 100%;
             }
         }
     }
