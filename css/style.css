@@ -1347,7 +1347,7 @@ nav {
   .modal .modal-container {
     justify-content: initial;
     margin-top: 0;
-    height: 95vh;
+    height: 100vh;
     width: 23rem;
     margin-top: 5vh;
   }
