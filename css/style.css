@@ -428,6 +428,7 @@ h2 {
 .modal.active .containerImgModal {
   border-radius: 2rem;
   position: relative;
+  width: 23rem;
 }
 .modal.active .containerImgModal img {
   border-radius: 2rem 2rem 0 0;
@@ -529,7 +530,7 @@ h2 {
   flex-direction: column;
   margin-top: 1rem;
   margin-left: 0.7rem;
-  width: 25rem;
+  width: 22rem;
   margin-bottom: 1rem;
 }
 .modal.active .containerBodyActive .containerAbout p:nth-child(1) {
