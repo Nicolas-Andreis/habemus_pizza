@@ -120,17 +120,107 @@
             <h2 class="titulos">Nuestras promos</h2>
             <div class="promosMain">
                 <section class="containerCardsPromos">
-                    <div class="cardBasis"> <!-- aplico flex basis sin modificar el dimensionado de card-->
+                    <div class="cardBasis">
                         <div class="cardPromos">
                             <img src="../imagenes/promos/individual.jpg" class="imgCards" alt="cuatro empanadas">
                             <div class="card-texto">
                                 <h5 class="subtitulos">Individual</h5>
                                 <p class="texto">4 Empanadas <br>
                                     (2 carne + 2 jyq)</p>
-                                <a href="#" class="btn col-md-8 btn-outline-warning">Pedir</a>
+                                <button class="btn-abrir-modal" id="btn-abrir-modal-1">Pedir</button>
                             </div>
-                            <button><img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
-                                <img src="../imagenes/iconos-promos/activo.png" class="activo" alt=""></button>
+                            <button class="heart" data-modal-target="modalDialog-1">
+                                <img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
+                                <img src="../imagenes/iconos-promos/activo.png" class="activo" alt="">
+                            </button>
+                        </div>
+                        <!-- Modal 1 -->
+                        <div class="modal" id="modalDialog-1">
+                            <div class="modal-container">
+                                <div class="containerImgModal sombra">
+                                    <img src="../imagenes/promos/individual.jpg" class="producto" alt="">
+                                    <button class="btn-cerrar-modal">
+                                        <img src="../imagenes/iconos-modal/back.png" alt="">
+                                    </button>
+                                    <button class="btn-heart-modal">
+                                        <img src="../imagenes/iconos-modal/like.png" class="noLike heart-icon" alt="">
+                                        <img src="../imagenes/iconos-modal/likeactivo.png" class="like heart-icon"
+                                            alt="">
+                                    </button>
+                                    <button class="btn-zoom-modal">
+                                        <img src="../imagenes/iconos-modal/zoom.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="containerBodyActive sombra">
+                                    <div class="containerAlaingPromo">
+                                        <div class="conitainerPromoTitle">
+                                            <p class="texto">Promo</p>
+                                            <h5 class="subtitulos">Individual</h5>
+                                            <p class="titulos precio">$1440</p>
+                                        </div>
+                                        <div class="valorate">
+                                            <img src="../imagenes/iconos-modal/estrella.png" alt="estrella valoracion">
+                                            <p>4.5</p>
+                                        </div>
+                                    </div>
+                                    <div class="conainterOvalo">
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/reloj.png" alt="reloj">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">15</p>
+                                                <p class="texto">minutos</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/person.png" alt="persona">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">1</p>
+                                                <p class="texto">persona</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/fire.png" alt="fuego">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">ya</p>
+                                                <p class="texto">listo</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/drink.png" alt="bebida">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">0</p>
+                                                <p class="texto">bebida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="containerAbout">
+                                        <p class="subtitulos">Incluye</p>
+                                        <p class="texto">
+                                            - 2 empanadas de carne <br>
+                                            - 2 empanadas de jamon y queso <br>
+                                        </p>
+                                    </div>
+                                    <div class="containerCantidad">
+                                        <p class="subtitulos">Cantidad</p>
+                                        <div class="botoneraCantidad">
+                                            <button class="restar sombra">-</button>
+                                            <p class="titulos" id="contador-1">0</p>
+                                            <button class="sumar sombra">+</button>
+                                        </div>
+                                        <div class="total carrito" id="carrito-1">
+                                            <p class="carrito">$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="cardBasis">
@@ -140,10 +230,99 @@
                                 <h5 class="subtitulos">Empanadas</h5>
                                 <p class="texto">6 Empanadas <br>
                                     1 gaseosa 1.5lts</p>
-                                <a href="#" class="btn col-md-8 btn-outline-warning">Pedir</a>
+                                <button class="btn-abrir-modal" id="btn-abrir-modal-2">Pedir</button>
                             </div>
-                            <button><img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
+                            <button class="heart" data-modal-target="modalDialog-2">
+                                <img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
                                 <img src="../imagenes/iconos-promos/activo.png" class="activo" alt=""></button>
+                        </div>
+                        <!-- Modal  2    -->
+                        <div class="modal" id="modalDialog-2">
+                            <div class="modal-container">
+                                <div class="containerImgModal sombra">
+                                    <img src="../imagenes/promos/empanadas.jpg" class="producto" alt="">
+                                    <button class="btn-cerrar-modal">
+                                        <img src="../imagenes/iconos-modal/back.png" alt="">
+                                    </button>
+                                    <button class="btn-heart-modal">
+                                        <img src="../imagenes/iconos-modal/like.png" class="noLike heart-icon" alt="">
+                                        <img src="../imagenes/iconos-modal/likeactivo.png" class="like heart-icon"
+                                            alt="">
+                                    </button>
+                                    <button class="btn-zoom-modal">
+                                        <img src="../imagenes/iconos-modal/zoom.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="containerBodyActive sombra">
+                                    <div class="containerAlaingPromo">
+                                        <div class="conitainerPromoTitle">
+                                            <p class="texto">Promo</p>
+                                            <h5 class="subtitulos">Empanadas</h5>
+                                            <p class="titulos precio">$2790</p>
+                                        </div>
+                                        <div class="valorate">
+                                            <img src="../imagenes/iconos-modal/estrella.png" alt="estrella valoracion">
+                                            <p>4.5</p>
+                                        </div>
+                                    </div>
+                                    <div class="conainterOvalo">
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/reloj.png" alt="reloj">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">15</p>
+                                                <p class="texto">minutos</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/person.png" alt="persona">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">1</p>
+                                                <p class="texto">persona</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/fire.png" alt="fuego">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">ya</p>
+                                                <p class="texto">listo</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/drink.png" alt="bebida">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">1</p>
+                                                <p class="texto">bebida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="containerAbout">
+                                        <p class="subtitulos">Incluye</p>
+                                        <p class="texto">
+                                            - 6 empanadas a eleccion <br>
+                                            - 1 gaseosa 1,5lts
+                                        </p>
+                                    </div>
+                                    <div class="containerCantidad">
+                                        <p class="subtitulos">Cantidad</p>
+                                        <div class="botoneraCantidad">
+                                            <button class="restar sombra">-</button>
+                                            <p class="titulos" id="contador-2">0</p>
+                                            <button class="sumar sombra">+</button>
+                                        </div>
+                                        <div class="total carrito" id="carrito-2">
+                                            <p class="carrito">$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="cardBasis">
@@ -153,10 +332,99 @@
                                 <h5 class="subtitulos">2 personas</h5>
                                 <p class="texto">1 Pizza muzzaerlla <br>
                                     1 gaseosa 1.5lts</p>
-                                <a href="#" class="btn col-md-8 btn-outline-warning">Pedir</a>
+                                <button class="btn-abrir-modal" id="btn-abrir-modal-3">Pedir</button>
                             </div>
-                            <button><img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
+                            <button class="heart" data-modal-target="modalDialog-3">
+                                <img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
                                 <img src="../imagenes/iconos-promos/activo.png" class="activo" alt=""></button>
+                        </div>
+                        <!-- Modal  3    -->
+                        <div class="modal" id="modalDialog-3">
+                            <div class="modal-container">
+                                <div class="containerImgModal sombra">
+                                    <img src="../imagenes/promos/pizzapromo.jpg" class="producto" alt="">
+                                    <button class="btn-cerrar-modal">
+                                        <img src="../imagenes/iconos-modal/back.png" alt="">
+                                    </button>
+                                    <button class="btn-heart-modal">
+                                        <img src="../imagenes/iconos-modal/like.png" class="noLike heart-icon" alt="">
+                                        <img src="../imagenes/iconos-modal/likeactivo.png" class="like heart-icon"
+                                            alt="">
+                                    </button>
+                                    <button class="btn-zoom-modal">
+                                        <img src="../imagenes/iconos-modal/zoom.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="containerBodyActive sombra">
+                                    <div class="containerAlaingPromo">
+                                        <div class="conitainerPromoTitle">
+                                            <p class="texto">Promo</p>
+                                            <h5 class="subtitulos">2 personas</h5>
+                                            <p class="titulos precio">$3160</p>
+                                        </div>
+                                        <div class="valorate">
+                                            <img src="../imagenes/iconos-modal/estrella.png" alt="estrella valoracion">
+                                            <p>4.9</p>
+                                        </div>
+                                    </div>
+                                    <div class="conainterOvalo">
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/reloj.png" alt="reloj">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">15</p>
+                                                <p class="texto">minutos</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/person.png" alt="persona">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">2</p>
+                                                <p class="texto">personas</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/fire.png" alt="fuego">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">ya</p>
+                                                <p class="texto">listo</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/drink.png" alt="bebida">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">1</p>
+                                                <p class="texto">bebida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="containerAbout">
+                                        <p class="subtitulos">Incluye</p>
+                                        <p class="texto">
+                                            - 1 pizza de muzzaerlla <br>
+                                            - 1 gaseosa 1.5lts
+                                        </p>
+                                    </div>
+                                    <div class="containerCantidad">
+                                        <p class="subtitulos">Cantidad</p>
+                                        <div class="botoneraCantidad">
+                                            <button class="restar sombra">-</button>
+                                            <p class="titulos" id="contador-3">0</p>
+                                            <button class="sumar sombra">+</button>
+                                        </div>
+                                        <div class="total carrito" id="carrito-3">
+                                            <p class="carrito">$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="cardBasis">
@@ -166,10 +434,100 @@
                                 <h5 class="subtitulos">Promo familiar</h5>
                                 <p class="texto">1 Pizza muzzaerlla <br>
                                     1 Pizza napolitana</p>
-                                <a href="#" class="btn col-md-8 btn-outline-warning">Pedir</a>
+                                <button class="btn-abrir-modal" id="btn-abrir-modal-4">Pedir</button>
                             </div>
-                            <button><img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
+                            <button class="heart" data-modal-target="modalDialog-4">
+                                <img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
                                 <img src="../imagenes/iconos-promos/activo.png" class="activo" alt=""></button>
+                        </div>
+                        <!-- Modal  4    -->
+                        <div class="modal" id="modalDialog-4">
+                            <div class="modal-container">
+                                <div class="containerImgModal sombra">
+                                    <img src="../imagenes/promos/2 pizzas.jpg" class="producto" alt="">
+                                    <button class="btn-cerrar-modal">
+                                        <img src="../imagenes/iconos-modal/back.png" alt="">
+                                    </button>
+                                    <button class="btn-heart-modal">
+                                        <img src="../imagenes/iconos-modal/like.png" class="noLike heart-icon" alt="">
+                                        <img src="../imagenes/iconos-modal/likeactivo.png" class="like heart-icon"
+                                            alt="">
+                                    </button>
+                                    <button class="btn-zoom-modal">
+                                        <img src="../imagenes/iconos-modal/zoom.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="containerBodyActive sombra">
+                                    <div class="containerAlaingPromo">
+                                        <div class="conitainerPromoTitle">
+                                            <p class="texto">Promo</p>
+                                            <h5 class="subtitulos">Familiar</h5>
+                                            <p class="titulos precio">$5250</p>
+                                        </div>
+                                        <div class="valorate">
+                                            <img src="../imagenes/iconos-modal/estrella.png" alt="estrella valoracion">
+                                            <p>4.3</p>
+                                        </div>
+                                    </div>
+                                    <div class="conainterOvalo">
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/reloj.png" alt="reloj">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">15</p>
+                                                <p class="texto">minutos</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/person.png" alt="persona">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">4</p>
+                                                <p class="texto">personas</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/fire.png" alt="fuego">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">ya</p>
+                                                <p class="texto">listo</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/drink.png" alt="bebida">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">1</p>
+                                                <p class="texto">bebida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="containerAbout">
+                                        <p class="subtitulos">Incluye</p>
+                                        <p class="texto">
+                                            - 1 pizza muzzaerlla <br>
+                                            - 1 pizza napolitana <br>
+                                            - 1 gaseosa 1.5lts
+                                        </p>
+                                    </div>
+                                    <div class="containerCantidad">
+                                        <p class="subtitulos">Cantidad</p>
+                                        <div class="botoneraCantidad">
+                                            <button class="restar sombra">-</button>
+                                            <p class="titulos" id="contador-4">0</p>
+                                            <button class="sumar sombra">+</button>
+                                        </div>
+                                        <div class="total carrito" id="carrito-4">
+                                            <p class="carrito">$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="cardBasis">
@@ -180,10 +538,101 @@
                                 <h5 class="subtitulos">Promo XL</h5>
                                 <p class="texto">1 Pizza especial <br>
                                     12 Empanadas</p>
-                                <a href="#" class="btn col-md-8 btn-outline-warning">Pedir</a>
+                                <button class="btn-abrir-modal" id="btn-abrir-modal-5">Pedir</button>
                             </div>
-                            <button><img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
+                            <button class="heart" data-modal-target="modalDialog-5">
+                                <img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
                                 <img src="../imagenes/iconos-promos/activo.png" class="activo" alt=""></button>
+                        </div>
+                        <!-- Modal  5    -->
+                        <div class="modal" id="modalDialog-5">
+                            <div class="modal-container">
+                                <div class="containerImgModal sombra">
+                                    <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg"
+                                        class="producto" alt="">
+                                    <button class="btn-cerrar-modal">
+                                        <img src="../imagenes/iconos-modal/back.png" alt="">
+                                    </button>
+                                    <button class="btn-heart-modal">
+                                        <img src="../imagenes/iconos-modal/like.png" class="noLike heart-icon" alt="">
+                                        <img src="../imagenes/iconos-modal/likeactivo.png" class="like heart-icon"
+                                            alt="">
+                                    </button>
+                                    <button class="btn-zoom-modal">
+                                        <img src="../imagenes/iconos-modal/zoom.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="containerBodyActive sombra">
+                                    <div class="containerAlaingPromo">
+                                        <div class="conitainerPromoTitle">
+                                            <p class="texto">Promo</p>
+                                            <h5 class="subtitulos">XL</h5>
+                                            <p class="titulos precio">$7000</p>
+                                        </div>
+                                        <div class="valorate">
+                                            <img src="../imagenes/iconos-modal/estrella.png" alt="estrella valoracion">
+                                            <p>4.9</p>
+                                        </div>
+                                    </div>
+                                    <div class="conainterOvalo">
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/reloj.png" alt="reloj">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">15</p>
+                                                <p class="texto">minutos</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/person.png" alt="persona">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">5</p>
+                                                <p class="texto">personas</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/fire.png" alt="fuego">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">ya</p>
+                                                <p class="texto">listo</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/drink.png" alt="bebida">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">2</p>
+                                                <p class="texto">bebida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="containerAbout">
+                                        <p class="subtitulos">Incluye</p>
+                                        <p class="texto">
+                                            - 1 pizza especial <br>
+                                            - 12 empanadas a eleccion <br>
+                                            - 2 gaseosa 1.5lts
+                                        </p>
+                                    </div>
+                                    <div class="containerCantidad">
+                                        <p class="subtitulos">Cantidad</p>
+                                        <div class="botoneraCantidad">
+                                            <button class="restar sombra">-</button>
+                                            <p class="titulos" id="contador-5">0</p>
+                                            <button class="sumar sombra">+</button>
+                                        </div>
+                                        <div class="total carrito" id="carrito-5">
+                                            <p class="carrito">$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="cardBasis">
@@ -193,10 +642,100 @@
                                 <h5 class="subtitulos">Juntada</h5>
                                 <p class="texto">2 Pizza especial <br>
                                     1 Pizza napolitana</p>
-                                <a href="#" class="btn col-md-8 btn-outline-warning">Pedir</a>
+                                <button class="btn-abrir-modal" id="btn-abrir-modal-6">Pedir</button>
                             </div>
-                            <button><img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
+                            <button class="heart" data-modal-target="modalDialog-6">
+                                <img src="../imagenes/iconos-promos/inactivo.png" class="inactivo" alt="">
                                 <img src="../imagenes/iconos-promos/activo.png" class="activo" alt=""></button>
+                        </div>
+                        <!-- Modal  6    -->
+                        <div class="modal" id="modalDialog-6">
+                            <div class="modal-container">
+                                <div class="containerImgModal sombra">
+                                    <img src="../imagenes/promos/juntada.jpg" class="producto" alt="">
+                                    <button class="btn-cerrar-modal">
+                                        <img src="../imagenes/iconos-modal/back.png" alt="">
+                                    </button>
+                                    <button class="btn-heart-modal">
+                                        <img src="../imagenes/iconos-modal/like.png" class="noLike heart-icon" alt="">
+                                        <img src="../imagenes/iconos-modal/likeactivo.png" class="like heart-icon"
+                                            alt="">
+                                    </button>
+                                    <button class="btn-zoom-modal">
+                                        <img src="../imagenes/iconos-modal/zoom.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="containerBodyActive sombra">
+                                    <div class="containerAlaingPromo">
+                                        <div class="conitainerPromoTitle">
+                                            <p class="texto">Promo</p>
+                                            <h5 class="subtitulos">Juntada</h5>
+                                            <p class="titulos precio">$7800</p>
+                                        </div>
+                                        <div class="valorate">
+                                            <img src="../imagenes/iconos-modal/estrella.png" alt="estrella valoracion">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="conainterOvalo">
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/reloj.png" alt="reloj">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">15</p>
+                                                <p class="texto">minutos</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/person.png" alt="persona">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">6</p>
+                                                <p class="texto">personas</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/fire.png" alt="fuego">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">ya</p>
+                                                <p class="texto">listo</p>
+                                            </div>
+                                        </div>
+                                        <div class="ovalo">
+                                            <div class="circle">
+                                                <img src="../imagenes/iconos-modal/drink.png" alt="bebida">
+                                            </div>
+                                            <div class="textoOvalo">
+                                                <p class="texto">3</p>
+                                                <p class="texto">bebida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="containerAbout">
+                                        <p class="subtitulos">Incluye</p>
+                                        <p class="texto">
+                                            - 2 pizzas especiales <br>
+                                            - 1 pizza napolitana <br>
+                                            - 3 gaseosas 1.5lts
+                                        </p>
+                                    </div>
+                                    <div class="containerCantidad">
+                                        <p class="subtitulos">Cantidad</p>
+                                        <div class="botoneraCantidad">
+                                            <button class="restar sombra">-</button>
+                                            <p class="titulos" id="contador-6">0</p>
+                                            <button class="sumar sombra">+</button>
+                                        </div>
+                                        <div class="total" id="carrito-6">
+                                            <p class="carrito">$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -221,6 +760,8 @@
             </div>
         </footer>
     </div>
+    <!--SCRIPT JavaScript-->
+    <script src="../js/prmos.js"></script>
     <!--SCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

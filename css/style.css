@@ -298,33 +298,40 @@ h2 {
 .promosMain .cardPromos .card-texto p {
   color: white;
 }
-.promosMain .cardPromos .card-texto a {
+.promosMain .cardPromos .card-texto button {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
+  width: 5rem;
+  background-color: rgb(33, 37, 41);
+  border: rgb(255, 145, 15) solid 1px;
+  border-radius: 0.5rem;
+  height: 2rem;
+  color: rgb(255, 145, 15);
 }
-.promosMain .cardPromos button {
+.promosMain .cardPromos .card-texto button {
+  transition: all 0.5s;
+}
+.promosMain .cardPromos .card-texto button:hover {
+  background-color: rgb(255, 145, 15);
+  color: black;
+}
+.promosMain .cardPromos .heart {
   position: relative;
   left: 4.9rem;
-  bottom: 2rem;
+  bottom: 2.2rem;
   height: 3rem;
   background: none;
   border: none;
   padding-bottom: 7.5rem;
   padding-right: 0.3rem;
 }
-.promosMain .cardPromos button .inactivo {
+.promosMain .cardPromos .heart .inactivo {
   width: 1.5rem;
   opacity: 35%;
 }
-.promosMain .cardPromos button .activo {
+.promosMain .cardPromos .heart .activo {
   width: 1.5rem;
   display: none;
-}
-.promosMain .cardPromos button:active .inactivo {
-  display: none;
-}
-.promosMain .cardPromos button:active .activo {
-  display: block;
 }
 
 .imagenPublicitaria {
@@ -398,6 +405,328 @@ h2 {
 }
 .redes .redesLink:hover {
   transform: rotateY(360deg);
+}
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(65, 65, 65, 0.6);
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal.active .containerImgModal {
+  border-radius: 2rem;
+  position: relative;
+}
+.modal.active .containerImgModal img {
+  border-radius: 2rem 2rem 0 0;
+}
+.modal.active .containerBodyActive {
+  background-color: rgb(33, 37, 41);
+  border-radius: 2rem;
+  position: relative;
+  z-index: 1;
+  top: -5rem;
+  padding-bottom: 1rem;
+}
+.modal.active .containerBodyActive .containerAlaingPromo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+.modal.active .containerBodyActive .containerAlaingPromo .conitainerPromoTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.7rem;
+}
+.modal.active .containerBodyActive .containerAlaingPromo .conitainerPromoTitle p:nth-child(1) {
+  margin-bottom: 0;
+  color: white;
+}
+.modal.active .containerBodyActive .containerAlaingPromo .conitainerPromoTitle p:nth-child(3) {
+  margin-bottom: 0;
+  color: white;
+  font-weight: bold;
+}
+.modal.active .containerBodyActive .containerAlaingPromo .valorate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 145, 15);
+  height: 2rem;
+  border-radius: 2rem;
+  color: black;
+  width: 5rem;
+  margin-right: 3%;
+}
+.modal.active .containerBodyActive .containerAlaingPromo .valorate img {
+  width: 1.4rem;
+  margin-left: 0.2rem;
+}
+.modal.active .containerBodyActive .containerAlaingPromo .valorate p {
+  margin-bottom: 0;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+.modal.active .containerBodyActive .conainterOvalo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.modal.active .containerBodyActive .conainterOvalo .ovalo {
+  background-color: rgb(255, 145, 15);
+  height: 9.5rem;
+  width: 4.7rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 0.4rem;
+  justify-content: space-between;
+}
+.modal.active .containerBodyActive .conainterOvalo .ovalo .circle {
+  background-color: rgb(33, 37, 41);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.modal.active .containerBodyActive .conainterOvalo .ovalo .circle img {
+  object-fit: contain;
+  width: 50%;
+}
+.modal.active .containerBodyActive .conainterOvalo .ovalo .textoOvalo {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.modal.active .containerBodyActive .conainterOvalo .ovalo .textoOvalo p {
+  margin-bottom: 0rem;
+  font-weight: 700;
+}
+.modal.active .containerBodyActive .containerAbout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 0.7rem;
+  width: 25rem;
+  margin-bottom: 1rem;
+}
+.modal.active .containerBodyActive .containerAbout p:nth-child(1) {
+  color: white;
+  font-weight: 500;
+}
+.modal.active .containerBodyActive .containerAbout p:nth-child(2) {
+  color: white;
+}
+.modal.active .containerBodyActive .containerCantidad {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.modal.active .containerBodyActive .containerCantidad p:nth-child(1) {
+  color: white;
+  margin-left: 0.7rem;
+  margin-bottom: 0;
+}
+.modal.active .containerBodyActive .containerCantidad .botoneraCantidad {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 153, 32);
+  width: 40%;
+  height: 2rem;
+  border-radius: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal.active .containerBodyActive .containerCantidad .botoneraCantidad p {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.modal.active .containerBodyActive .containerCantidad .botoneraCantidad .restar {
+  background-color: rgb(255, 145, 15);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+}
+.modal.active .containerBodyActive .containerCantidad .botoneraCantidad .restar:active {
+  background-color: rgb(248, 94, 0);
+  box-shadow: none;
+}
+.modal.active .containerBodyActive .containerCantidad .botoneraCantidad .sumar {
+  background-color: rgb(255, 145, 15);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+}
+.modal.active .containerBodyActive .containerCantidad .botoneraCantidad .sumar:active {
+  background-color: rgb(248, 94, 0);
+  box-shadow: none;
+}
+.modal.active .containerBodyActive .containerCantidad .total {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 5rem;
+  border-bottom: orange solid 1px;
+  border-top: orange solid 1px;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 0;
+}
+.modal.active .btn-cerrar-modal {
+  background-color: rgb(255, 145, 15);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 2rem;
+  border: none;
+  position: relative;
+  bottom: 80%;
+  left: 2%;
+}
+.modal.active .btn-cerrar-modal:active {
+  background-color: rgb(33, 37, 41);
+}
+.modal.active .btn-heart-modal {
+  background-color: rgb(255, 145, 15);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 2rem;
+  border: none;
+  position: relative;
+  bottom: 80%;
+  left: 73%;
+}
+.modal.active .btn-heart-modal img {
+  width: 2rem;
+}
+.modal.active .btn-heart-modal .like {
+  display: none;
+}
+.modal.active .btn-heart-modal.active {
+  /* Estilos cuando el botón está activo */
+  /* Ejemplo: cambiar el color de fondo */
+  background-color: rgb(33, 37, 41);
+  width: 3.2rem;
+  height: 3.2rem;
+  bottom: 78%;
+  position: absolute;
+  left: 21rem;
+}
+.modal.active .btn-heart-modal.active img:nth-child(1) {
+  display: none;
+}
+.modal.active .btn-heart-modal.active img:nth-child(2) {
+  display: block;
+  margin: auto;
+}
+
+.btn-zoom-modal {
+  background-color: rgb(255, 145, 15);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 2rem;
+  border: none;
+  position: absolute;
+  bottom: 28%;
+  left: 85%;
+}
+.btn-zoom-modal:active {
+  background-color: rgb(33, 37, 41);
+}
+.btn-zoom-modal img {
+  width: 2rem;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 80vh;
+  background-color: rgb(33, 37, 41);
+  margin-top: 10vh;
+}
+
+.modal-container img {
+  width: 100%;
+}
+
+.modal .modal-container .containerImgModal .btn-heart-modal.active {
+  left: 21rem;
+}
+
+.containerImgModal {
+  position: relative;
+}
+
+.my-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 9999;
+}
+
+.my-modal-content {
+  max-width: 60%;
+  max-height: 60%;
+  position: relative;
+  margin: 20px auto;
+  background-color: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.my-modal img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.my-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 145, 15);
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -710,6 +1039,10 @@ nav {
   margin-top: 1rem;
 }
 
+.modal .modal-container .containerImgModal .btn-heart-modal.active {
+  left: 21rem;
+}
+
 @media (max-width: 768px) and (orientation: landscape) {
   /*es igual o menor que 768px- HASTA ESTE VALOR, RESPETA ESTE CODIGO*/
   .icon-whatsapp:hover {
@@ -921,7 +1254,7 @@ nav {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
   }
-  .promosMain .containerCardsPromos .cardBasis .cardPromos button {
+  .promosMain .containerCardsPromos .cardBasis .cardPromos .heart {
     position: static;
     height: 3rem;
     background: none;
@@ -929,18 +1262,18 @@ nav {
     padding-bottom: 7.5rem;
     padding-right: 0.3rem;
   }
-  .promosMain .containerCardsPromos .cardBasis .cardPromos button .inactivo {
+  .promosMain .containerCardsPromos .cardBasis .cardPromos .heart .inactivo {
     width: 1.5rem;
     opacity: 35%;
   }
-  .promosMain .containerCardsPromos .cardBasis .cardPromos button .activo {
+  .promosMain .containerCardsPromos .cardBasis .cardPromos .heart .activo {
     width: 1.5rem;
     display: none;
   }
-  .promosMain .containerCardsPromos .cardBasis .cardPromos button:active .inactivo {
+  .promosMain .containerCardsPromos .cardBasis .cardPromos .heart:active .inactivo {
     display: none;
   }
-  .promosMain .containerCardsPromos .cardBasis .cardPromos button:active .activo {
+  .promosMain .containerCardsPromos .cardBasis .cardPromos .heart:active .activo {
     display: block;
   }
   .cardsBox .box {
@@ -1000,10 +1333,37 @@ nav {
     height: 10rem;
   }
   .containerEnviar {
-    margin-bottom: 1.5rem; /*separa solo el boton del footer*/
+    margin-bottom: 1.5rem;
+    /*separa solo el boton del footer*/
   }
   .redes {
     margin-top: 3.5rem;
+  }
+  .modal {
+    /*mobile*/
+  }
+  .modal .modal-container {
+    justify-content: initial;
+    margin-top: 0;
+    height: 100vh;
+    width: 25rem;
+  }
+  .modal .modal-container .containerImgModal .producto {
+    border-radius: 0;
+  }
+  .modal .modal-container .containerImgModal .btn-heart-modal {
+    left: 69%;
+  }
+  .modal .modal-container .containerImgModal .btn-heart-modal.active {
+    left: 81%;
+  }
+  .modal .modal-container .containerImgModal .btn-zoom-modal {
+    bottom: 33%;
+    left: 82%;
+  }
+  .modal .modal-container .containerBodyActive {
+    border-radius: 2rem 2rem 0 0;
+    padding-bottom: 1.5rem;
   }
 }
 

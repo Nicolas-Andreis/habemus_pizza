@@ -126,3 +126,15 @@
 .redes{
     margin-top: 1rem;
 }
+
+.modal{
+    .modal-container{
+        .containerImgModal{
+            .btn-heart-modal{
+                &.active{
+                    left: 21rem;
+                }
+            }           
+        }
+    }
+}

@@ -12,10 +12,11 @@
         border-radius: $bordesRedondeados;
         margin-top: 1rem;
         box-shadow: map-get($sombra, densa);
+
         & {
             transition: all 1s;
         }
-    
+
         &:hover {
             transform: scale(1.1);
         }
@@ -39,21 +40,38 @@
                 color: white;
             }
 
-            a {
+            button {
+
                 font-size: map-get($texto, mobile);
                 margin-bottom: 0.5rem;
+                width: 5rem;
+                background-color: $grisoscuro;
+                border: $Naranja solid 1px;
+                border-radius: $bordesRedondeados;
+                height: 2rem;
+                color: $Naranja;
+
+                & {
+                    transition: all 0.5s;
+                }
+
+                &:hover {
+                    background-color: $Naranja;
+                    color: black;
+                }
             }
         }
 
-        button {
+        .heart {
             position: relative;
             left: 4.9rem;
-            bottom: 2rem;
+            bottom: 2.2rem;
             height: 3rem;
             background: none;
             border: none;
             padding-bottom: 7.5rem;
             padding-right: 0.3rem;
+
             .inactivo {
                 width: 1.5rem;
                 opacity: 35%;
@@ -62,16 +80,6 @@
             .activo {
                 width: 1.5rem;
                 display: none;
-            }
-
-            &:active {
-                .inactivo {
-                    display: none;
-                }
-
-                .activo {
-                    display: block;
-                }
             }
         }
     }

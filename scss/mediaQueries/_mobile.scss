@@ -30,7 +30,7 @@
             width: 3rem;
         }
     }
-    
+
 
 
 
@@ -91,12 +91,14 @@
         flex-direction: column;
         justify-content: space-evenly;
         flex-wrap: nowrap;
-        .containerCardsPromos{
+
+        .containerCardsPromos {
             width: 90%;
             justify-content: center;
-            
-            .cardBasis{
+
+            .cardBasis {
                 width: 100%;
+
                 .cardPromos {
                     height: auto;
                     background-color: $grisoscuro;
@@ -106,7 +108,7 @@
                     justify-content: space-between;
                     border-radius: $bordesRedondeados;
                     margin-top: 1rem;
-        
+
                     .imgCards {
                         height: 8rem;
                         width: 8rem;
@@ -114,47 +116,48 @@
                         padding: 0.5rem;
                         border-radius: 1rem;
                     }
-        
+
                     .card-texto {
                         margin: 0.3rem auto 0 auto;
                         text-align: center;
-        
+
                         h5 {
                             color: $Naranja;
                         }
-        
+
                         p {
                             color: white;
                         }
-        
+
                         a {
                             font-size: map-get($texto, mobile);
                             margin-bottom: 0.5rem;
                         }
                     }
-        
-                    button {
+
+                    .heart {
                         position: static;
                         height: 3rem;
                         background: none;
                         border: none;
                         padding-bottom: 7.5rem;
                         padding-right: 0.3rem;
+
                         .inactivo {
                             width: 1.5rem;
                             opacity: 35%;
                         }
-        
+
                         .activo {
                             width: 1.5rem;
                             display: none;
                         }
-        
+
                         &:active {
                             .inactivo {
                                 display: none;
                             }
-        
+
                             .activo {
                                 display: block;
                             }
@@ -162,15 +165,21 @@
                     }
                 }
             }
-                }
-                
-            }
-        
+        }
+
+    }
+
+    .modal-container {
+        // width: 100%;
+        //height: 100%;
+    }
+
 
     .cardsBox {
         .box {
             //box-shadow: none;
             box-shadow: map-get($sombra, densa);
+
             img {
                 width: 4rem;
                 vertical-align: text-top;
@@ -192,13 +201,14 @@
         /* le doy una dimension no visible */
     }
 
-    .imagenPublicitaria{
+    .imagenPublicitaria {
         width: 95%;
+
         .banner {
             img {
                 display: none;
             }
-    
+
             div {
                 #textoBanners {
                     font-size: map-get($textoBanners, mobile);
@@ -207,7 +217,7 @@
             }
         }
     }
-    
+
 
     /*NOSOTROS*/
     .cardsBox-nosotros {
@@ -253,10 +263,47 @@
             }
         }
     }
-    .containerEnviar{
-        margin-bottom: 1.5rem; /*separa solo el boton del footer*/
+
+    .containerEnviar {
+        margin-bottom: 1.5rem;
+        /*separa solo el boton del footer*/
     }
+
     .redes {
         margin-top: 3.5rem;
+    }
+
+
+
+    .modal {
+
+        /*mobile*/
+        .modal-container {            
+            justify-content: initial;
+            margin-top: 0;
+            height: 100vh;
+            width: 25rem;
+            .containerImgModal {
+                .producto{
+                    border-radius: 0;
+                }
+                .btn-heart-modal {
+                    left: 69%;
+
+                    &.active {
+                        left: 81%;
+                    }
+                }
+                .btn-zoom-modal{
+                    bottom: 33%;
+                    left: 82%;
+                } 
+            }
+
+            .containerBodyActive {
+                border-radius: 2rem 2rem 0 0;
+                padding-bottom: 1.5rem;
+            }
+        }
     }
 }
