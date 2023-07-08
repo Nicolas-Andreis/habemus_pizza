@@ -428,7 +428,7 @@ h2 {
 .modal.active .containerImgModal {
   border-radius: 2rem;
   position: relative;
-  width: 23rem;
+  width: 22.5rem;
 }
 .modal.active .containerImgModal img {
   border-radius: 2rem 2rem 0 0;
