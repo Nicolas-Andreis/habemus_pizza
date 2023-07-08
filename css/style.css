@@ -1347,7 +1347,7 @@ nav {
   .modal .modal-container {
     justify-content: initial;
     margin-top: 0;
-    height: 95vh;
+    height: 100vh;
     width: 23rem;
   }
   .modal .modal-container .containerImgModal .producto {
@@ -1366,7 +1366,7 @@ nav {
   .modal .modal-container .containerBodyActive {
     border-radius: 2rem 2rem 0 0;
     padding-bottom: 1.5rem;
-    width: 23rem;
+    width: 22rem;
   }
 }
 
