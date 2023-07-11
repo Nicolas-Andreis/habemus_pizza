@@ -169,10 +169,7 @@
 
     }
 
-    .modal-container {
-        // width: 100%;
-        //height: 100%;
-    }
+
 
 
     .cardsBox {
@@ -287,6 +284,7 @@
             .containerImgModal {
                 .producto{
                     border-radius: 0;
+                    width: 22rem;
                 }
                 .btn-heart-modal {
                     left: 69%;
@@ -296,7 +294,7 @@
                     }
                 }
                 .btn-zoom-modal{
-                    bottom: 33%;
+                    bottom: 30%;
                     left: 82%;
                 } 
             }

@@ -10,10 +10,11 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    overflow-x: none;
 
     .box {
-        @include sizes(22%, 5.5rem);
-        //background-color: rgb(33, 37, 41);
+    @include sizes(22%, 5.5rem);
+    //background-color: rgb(33, 37, 41);
     background-color: $grisoscuro;
     border-radius: 0.5rem;
     display: flex;

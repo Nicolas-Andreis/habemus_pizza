@@ -54,6 +54,25 @@
             /* Elimina la transformación en la media query */
         }
     }
+    .cardsBox {
+        overflow-x: auto;
+        scrollbar-width: thin;
+        /* Oculta visualmente la barra de desplazamiento */
+        white-space: nowrap;
+        width: 100%;
+
+        .box {
+            @include sizes(80%, auto);
+            flex: 1 0 auto;
+            display: inline-block;
+            white-space: normal;
+            margin-left: 10px;
+
+            .box--texto {
+                display: inline-grid;
+            }
+        }
+    }
 
     .containerCardsPromos{
         display: flex;
@@ -79,6 +98,7 @@
             }
         }
     }
+    
 
     .carrousel-nosotros {
         display: none;
@@ -132,7 +152,7 @@
         .containerImgModal{
             .btn-heart-modal{
                 &.active{
-                    left: 21rem;
+                    left: 18.5rem;
                 }
             }           
         }

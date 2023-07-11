@@ -232,6 +232,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  overflow-x: none;
 }
 .cardsBox .box {
   width: 22%;
@@ -428,7 +429,7 @@ h2 {
 .modal.active .containerImgModal {
   border-radius: 2rem;
   position: relative;
-  width: 22.5rem;
+  width: 22rem;
 }
 .modal.active .containerImgModal img {
   border-radius: 2rem 2rem 0 0;
@@ -447,7 +448,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .modal.active .containerBodyActive .containerAlaingPromo .conitainerPromoTitle {
   display: flex;
@@ -491,8 +492,8 @@ h2 {
 }
 .modal.active .containerBodyActive .conainterOvalo .ovalo {
   background-color: rgb(255, 145, 15);
-  height: 9.5rem;
-  width: 4.7rem;
+  height: 7.5rem;
+  width: 3.7rem;
   border-radius: 3rem;
   display: flex;
   flex-direction: column;
@@ -503,8 +504,8 @@ h2 {
 }
 .modal.active .containerBodyActive .conainterOvalo .ovalo .circle {
   background-color: rgb(33, 37, 41);
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 2rem;
   justify-content: center;
   display: flex;
@@ -624,7 +625,7 @@ h2 {
   border: none;
   position: relative;
   bottom: 80%;
-  left: 73%;
+  left: 71%;
 }
 .modal.active .btn-heart-modal img {
   width: 2rem;
@@ -640,7 +641,7 @@ h2 {
   height: 3.2rem;
   bottom: 78%;
   position: absolute;
-  left: 21rem;
+  left: 18.4rem;
 }
 .modal.active .btn-heart-modal.active img:nth-child(1) {
   display: none;
@@ -657,7 +658,7 @@ h2 {
   border-radius: 2rem;
   border: none;
   position: absolute;
-  bottom: 28%;
+  bottom: 30%;
   left: 85%;
 }
 .btn-zoom-modal:active {
@@ -671,11 +672,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: normal;
   width: 22rem;
   height: 80vh;
-  background-color: rgb(33, 37, 41);
-  margin-top: 10vh;
 }
 
 .modal-container img {
@@ -921,6 +920,55 @@ nav {
   align-items: center;
 }
 
+.container-section-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+.container-section-send .container-icon-send {
+  display: flex;
+  justify-content: center;
+}
+.container-section-send .container-icon-send img {
+  width: 13rem;
+}
+.container-section-send .container-texto-send {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+.container-section-send .container-texto-send p {
+  font-weight: 600;
+  color: white;
+}
+.container-section-send .container-button-send {
+  display: flex;
+  justify-content: center;
+}
+.container-section-send .container-button-send a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  width: 15rem;
+  border: rgb(255, 145, 15) solid 1px;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  color: rgb(255, 145, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.container-section-send .container-button-send a {
+  transition: all 0.5s;
+}
+.container-section-send .container-button-send a:hover {
+  background-color: rgb(255, 145, 15);
+  color: black;
+}
+
 @media (min-width: 992px) and (max-width: 1264px) {
   /*PROMOS*/
   .icon-whatsapp:hover { /*DESACTIVAR ROTACION WAPP*/
@@ -984,6 +1032,24 @@ nav {
     transform: none;
     /* Elimina la transformación en la media query */
   }
+  .cardsBox {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    /* Oculta visualmente la barra de desplazamiento */
+    white-space: nowrap;
+    width: 100%;
+  }
+  .cardsBox .box {
+    width: 80%;
+    height: auto;
+    flex: 1 0 auto;
+    display: inline-block;
+    white-space: normal;
+    margin-left: 10px;
+  }
+  .cardsBox .box .box--texto {
+    display: inline-grid;
+  }
   .containerCardsPromos {
     display: flex;
     flex-direction: row;
@@ -1042,7 +1108,7 @@ nav {
 }
 
 .modal .modal-container .containerImgModal .btn-heart-modal.active {
-  left: 21rem;
+  left: 18.5rem;
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -1353,6 +1419,7 @@ nav {
   }
   .modal .modal-container .containerImgModal .producto {
     border-radius: 0;
+    width: 22rem;
   }
   .modal .modal-container .containerImgModal .btn-heart-modal {
     left: 69%;
@@ -1361,7 +1428,7 @@ nav {
     left: 81%;
   }
   .modal .modal-container .containerImgModal .btn-zoom-modal {
-    bottom: 33%;
+    bottom: 30%;
     left: 82%;
   }
   .modal .modal-container .containerBodyActive {

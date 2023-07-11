@@ -1,0 +1,55 @@
+.container-section-send{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+    .container-icon-send {
+        display: flex;
+        justify-content: center;
+        img{
+            width: 13rem;
+        }
+    }
+    
+    .container-texto-send {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
+    
+        p {
+            font-weight: 600;
+            color: white;
+        }
+    }
+    
+    .container-button-send {
+        display: flex;
+        justify-content: center;
+    
+        a {
+            text-decoration: none;
+            font-size: map-get($texto, desktop);
+            margin-bottom: 0.5rem;
+            width: 15rem;
+            border: $Naranja solid 1px;
+            border-radius: $bordesRedondeados;
+            height: 2.5rem;
+            color: $Naranja;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+    
+            & {
+                transition: all 0.5s;
+            }
+    
+            &:hover {
+                background-color: $Naranja;
+                color: black;
+            }
+        }
+    }
+}

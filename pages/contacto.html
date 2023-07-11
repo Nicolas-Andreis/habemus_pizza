@@ -101,7 +101,7 @@
                         <h2 class="titulos">Contáctanos</h2>
                     </div>
                     <section class="formulario">
-                        <form>
+                        <form action="https://formsubmit.co/jnandreis@outlook.com" method="POST" > <!-- enviar el mail -->
                             <div class="datosContainer">
                                 <label for="name" class="datos">Nombre
                                     <input type="text" name="nombre" id="name" placeholder="Nombre" class="campoDatos">
@@ -122,6 +122,9 @@
                                 <input type="submit" value="Enviar" name="" id=""
                                     class="btn col-5 col-lg-3 btn-outline-warning">
                             </label>
+
+                            <input type="hidden" name="_next" value="./mailconfirm.html"> <!--pagina de gracias por el email -->
+                            <input type="hidden" name="_captcha" value="false"> <!-- quitar captcha-->
                         </form>
                     </section>
                 </div>

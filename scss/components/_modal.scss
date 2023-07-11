@@ -19,7 +19,7 @@
   .containerImgModal {
     border-radius: 2rem;
     position: relative;
-    width: 22.5rem;
+    width: 22rem;
 
     img {
       border-radius: 2rem 2rem 0 0;
@@ -40,7 +40,7 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 1rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.5rem;
 
       .conitainerPromoTitle {
         display: flex;
@@ -92,8 +92,8 @@
 
       .ovalo {
         background-color: $Naranja;
-        height: 9.5rem;
-        width: 4.7rem;
+        height: 7.5rem;
+        width: 3.7rem;
         border-radius: 3rem;
         display: flex;
         flex-direction: column;
@@ -104,8 +104,8 @@
 
         .circle {
           background-color: $grisoscuro;
-          width: 4rem;
-          height: 4rem;
+          width: 3rem;
+          height: 3rem;
           border-radius: 2rem;
           justify-content: center;
           display: flex;
@@ -247,7 +247,7 @@
     border: none;
     position: relative;
     bottom: 80%;
-    left: 73%;
+    left: 71%;
 
     img {
       width: 2rem;
@@ -266,7 +266,7 @@
     height: 3.2rem;
     bottom: 78%;
     position: absolute;
-    left: 21rem;
+    left: 18.4rem;
 
     & img:nth-child(1) {
       display: none;
@@ -287,7 +287,7 @@
   border-radius: 2rem;
   border: none;
   position: absolute;
-  bottom: 28%;
+  bottom: 30%;
   left: 85%;
 
   &:active {
@@ -306,11 +306,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: normal;
   width: 22rem;
   height: 80vh;
-  background-color: $grisoscuro;
-  margin-top: 10vh;
   //margin-bottom: 5%;
 }
 
