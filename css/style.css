@@ -959,7 +959,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .container-section-send .container-button-send a {
   transition: all 0.5s;
