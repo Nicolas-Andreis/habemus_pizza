@@ -308,7 +308,6 @@ h2 {
   border-radius: 0.5rem;
   height: 2rem;
   color: rgb(255, 145, 15);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .promosMain .cardPromos .card-texto button {
   transition: all 0.5s;
